@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>example6_7.jsp</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="num" id="num">
+        <button onclick="btn();">提交</button>
+    </form>
+</body>
+</html>
+<script>
+    function btn(){
+        var num=document.getElementById("num").value;
+        document.body.innerHTML="";
+        if(num>0)
+            document.write(num.toString())
+    }
+</script>

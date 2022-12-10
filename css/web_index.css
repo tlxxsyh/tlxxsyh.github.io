@@ -8,6 +8,19 @@
   --bg-color:rgb(16,21,29);
   --font-color:azure;
 }
+body{
+  height: 100%;
+}
+#footer{
+  bottom: 0px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+p{
+  color: #fff;
+  width: 100%;
+}
 /* 按钮盒子 */
 #button_div{
   margin-left: 10%;

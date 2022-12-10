@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/web_index.css">
     <title>web实验模拟运行</title>
 </head>
+
 <body>
-    <a href="html/web/operate_six1.html">实验六.1</a>
+    <div class="printer">
+        <h1 class="heading">Hello,World!</h1>
+    </div>
+    
+    <div id="button_div">
+        <button class="btn" onclick="window.location.href='html/web/operate_five1.html'">实验五.1</button>
+        <button class="btn" onclick="window.location.href='html/web/operate_five2.html'">实验五.2</button>
+        <button class="btn" onclick="window.location.href='html/web/operate_five3.html'">实验五.3</button>
+        <button class="btn" onclick="window.location.href='html/web/operate_six1.html'">实验六.1</button>
+        <button class="btn" onclick="window.location.href='html/web/operate_six2.html'">实验六.2</button>
+    </div>
+    <div class="background_star" style="position: fixed;z-index: -2;top: 0;left:0;bottom: 0;right: 0;">
+        <div class="night">
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+        </div>
+    </div>
+    
+    
 </body>
+
 </html>

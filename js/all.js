@@ -17,3 +17,18 @@ burger.addEventListener("click",()=>{
         }
     })
 })
+function index() {
+    window.location = "https://tlxxsyh.github.io";
+}
+function study() {
+    window.location = "https://tlxxsyh.github.io/html/study/study_index.html";
+}
+function expeiment() {
+    window.location = "https://tlxxsyh.github.io/html/web/web_index.html";
+}
+function about() {
+    window.location = "https://tlxxsyh.github.io/";
+}
+function feedback() {
+    window.location = "https://tlxxsyh.github.io/";
+}

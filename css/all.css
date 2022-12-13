@@ -5,6 +5,7 @@
 
 body {
   width: 100%;
+  box-sizing: border-box;
 }
 
 nav {
@@ -65,6 +66,10 @@ nav:hover{
 }
 /* 移动端样式 */
 @media screen and (max-width:768px) {
+  nav{
+    /* 让移动端自动显示顶栏 */
+    opacity: 1;
+  }
   .nav-menu {
     position: fixed;
     top: 100px;

@@ -1,5 +1,66 @@
+html{
+    scroll-behavior: smooth;
+}
+
 h1 {
     color:rgba(255, 255, 255, 0.851);
     margin-left: 30px;
     margin-top: 30px;
+}
+
+.mycontent{
+    height:300px;
+    width: 300px;
+    position:fixed;
+    margin-top: 110px;
+    right: 0;
+    /* border: 3px solid rgb(230, 219, 6); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mycontent li{
+    list-style: none;
+    position: relative;
+    margin-top: 3px;
+}
+.mycontent li a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1em;
+    /* 空心 */
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+.mycontent li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color:var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+}
+.mycontent li a:hover::before{
+    width: 100%;
+    -webkit-text-stroke: 1px var(--clr);
+    /* height: 100%; */
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+@media screen and (max-width:1300px){
+    .mycontent{
+        display: none;
+    }
+    #study-tree{
+        margin-top: 100px;
+        /* top: 100px; */
+    }
+    nav{
+        /* 让移动端自动显示顶栏 */
+        opacity: 1;
+    }
 }

@@ -1,3 +1,9 @@
+nav{
+    background-color: rgba(15,19,27,0.8);
+}
+.nav-menu li{
+    color:aliceblue;
+}
 .first-page{
     position: relative;
     z-index: 3;
@@ -6,8 +12,12 @@
     margin-top: 60vh;
     margin-left: 15vw;
 }
+/* 大标题下划线 */
 .title-line{
     margin-top: 20px;
+    height: 3px;
+    background-color: white;
+    border: 0;
     animation: right-move 2s ease 1 0s;
     width: 30vw;
 }
@@ -24,6 +34,66 @@
 .next-page{
     width: 70vw;
     margin-left: 15vw;
+}
+/* 每个区域标题 */
+.title-middle {
+    color: aliceblue;
+    font-size: 40px;
+}
+.title-middle:hover{
+    cursor: pointer;
+}
+/* 小标题下划线 */
+.little-line{
+    width: 180px;
+    background-color: rgba(255,255,255,0.3);
+    height: 3px;
+    border: 0;
+    margin-top: 20px;
+}
+.title-middle::after{
+    content: " #";
+    opacity: 0;
+    font-size: 30px;
+}
+.title-middle:hover::after{
+    opacity: 1;
+    color: rgb(110, 164, 252);
+    transition-duration: 1s;
+}
+/* 正文 */
+.main-text{
+    font-family: 微软雅黑,Helvetica;
+    color: aliceblue;
+    margin-top: 30px;
+    line-height: 38px;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+.footer{
+    padding-top: 200px;
+    padding-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    /* border: 3px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height:100px; */
+}
+
+#footer-title{
+    /* margin-top: 80px; */
+    color: aliceblue;
+    font-size: 24px;
+    color: #dadbdd;
+    letter-spacing: 5px;
+}
+#footer-sign{
+    font-size: 16px;
+    color:rgba(255,255,255,0.3);
+    letter-spacing: 6px;
+    margin-top: 6px;
 }
 @keyframes right-move{
     from{

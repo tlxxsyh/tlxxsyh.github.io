@@ -287,6 +287,10 @@ nav:hover{
 .page{
   margin-top: 80vh;
 }
+@font-face {
+  font-family: 汉仪昌黎宋刻本;
+  src: url(../fonts/HYCHANGLISONGKEBEN\(TRUING\)W.TTF);
+}
 /* 页脚 */
 #end-page{
   margin-bottom: 50px;

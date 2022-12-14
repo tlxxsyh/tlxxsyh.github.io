@@ -1,0 +1,14 @@
+#portrait{
+    margin-top: 0px;
+    width: 150px;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+#portrait:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.6s;
+}
+#portrait_box {
+    text-align: center;
+}

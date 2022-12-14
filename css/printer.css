@@ -1,0 +1,52 @@
+/* 打字机效果 */
+/* 用法：外层div盒子类名printer，内层类名为printer-text */
+.printer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+  }
+  .printer-text{
+    /* top: 20px; */
+    display:flex;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 60px;
+  }
+  .printer-text {
+    position: relative;
+  }
+  .printer-text:before,h1:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+  }
+  .printer-text:before{
+    background: rgb(15,19,28);
+    /* steps是分为多少段显示，infinite是循环显示，forwards是单次显示 */
+    animation: typing var(--typeSpeed) steps(var(--strLength)) 1s forwards;
+  }
+  .printer-text:after {
+    /* 光标宽度 */
+    width: 5px;
+    /* 光标颜色与字体一致 */
+    background-color: var(--font-color);
+    animation: typing var(--typeSpeed) steps(var(--strLength)) 1s forwards,
+    blink 500ms steps(var(--strLength)) infinite;
+  }
+  @keyframes typing {
+    to {
+        left:100%
+    }
+  }
+  @keyframes blink {
+    from,to{
+        background-color: transparent;
+    }
+    50% {
+        background: #fff;
+    }
+  }

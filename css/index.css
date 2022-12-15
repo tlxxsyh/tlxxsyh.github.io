@@ -239,54 +239,13 @@ nav{
     margin-top:-50px; */
     color:rgba(255, 255, 255, 0.6);
 }
-/* .glass-box{
-    margin-top: 30px;
-    margin-left: 30px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 120px;
-    width: 330px;
-}
-.small-img{
-    width: 90px;
-    height: 90px;
-    padding: 15px;
-}
-.small-box{
-    margin-left: 120px;
-    margin-top: -120px;
-    padding: 20px;
-}
-.small-title{
-    color:rgba(238,238,238,1);
-    font-size: 24px;
-    text-decoration: none;
-} */
+
 /* 页尾 */
-.footer{
-    padding-top: 200px;
-    padding-bottom: 80px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    /* border: 3px solid white; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height:100px; */
-}
 #footer-title{
-    /* margin-top: 80px; */
-    color: aliceblue;
-    font-size: 24px;
     color: #dadbdd;
-    letter-spacing: 5px;
 }
 #footer-sign{
-    font-size: 16px;
     color:rgba(255,255,255,0.3);
-    letter-spacing: 6px;
-    margin-top: 6px;
 }
 @keyframes right-move{
     from{

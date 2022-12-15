@@ -168,3 +168,28 @@ html::-webkit-scrollbar-track {
   background: rgba(40, 215, 250, 0.327);
 
 }
+
+/* 页尾 */
+.footer{
+  padding-top: 200px;
+  padding-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  /* border: 3px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height:100px; */
+}
+#footer-title{
+  /* margin-top: 80px; */
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.867);
+  letter-spacing: 5px;
+}
+#footer-sign{
+  font-size: 16px;
+  color:rgba(41, 41, 41, 0.808);
+  letter-spacing: 6px;
+  margin-top: 6px;
+}

@@ -21,46 +21,10 @@ html{
     background: url("../img/bg2.jpg");
     background-size:100% auto contain;
     background-repeat:no-repeat ;
-    background-position: center -300px;
+    background-position: 0 -60vh;
 }
-/* 装饰部分 */
-h1 {
-    color:rgb(110, 164, 252);
-    margin-left: 30px;
-    margin-top: 30px;
-    font-size: 30px;
-}
-h1::after{
-    content: " #";
-    opacity: 0;
-    font-size: 24px;
-}
-h1:hover::after{
-    opacity: 1;
-    color: rgb(255, 0, 0);
-    transition-duration: var(--delay-time);
-}
-h2 {
-    color:rgb(248, 182, 27);
-    margin-left: 60px;
-    margin-top: 10px;
-    font-size: 24px;
-}
-h2::after{
-    content: " #";
-    opacity: 0;
-    font-size: 18px;
-}
-h2:hover::after{
-    opacity: 1;
-    color: rgb(255, 35, 204);
-    transition-duration: var(--delay-time);
-}
-p{
-    margin-left: 100px;
-    margin-top: 10px;
-    color: azure;
-}
+
+
 /* 电梯导航 */
 .mycontent{
     height:300px;
@@ -103,6 +67,46 @@ p{
     -webkit-text-stroke: 1px var(--clr);
     /* height: 100%; */
     filter: drop-shadow(0 0 25px var(--clr));
+}
+/* 正文字体样式 */
+.main-text h1{
+    color:rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 30px;
+    cursor: default;
+}
+.main-text h1::after{
+    content: " #";
+    opacity: 0;
+    font-size: 24px;
+}
+.main-text h1:hover::after{
+    opacity: 1;
+    color: rgb(255, 0, 0);
+    transition-duration: var(--delay-time);
+}
+.main-text h2 {
+    color:rgb(70, 70, 70);
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: default;
+}
+.main-text h2::after{
+    content: " ##";
+    opacity: 0;
+    font-size: 18px;
+}
+.main-text h2:hover::after{
+    opacity: 1;
+    color: rgb(21, 111, 236);
+    transition-duration: var(--delay-time);
+}
+.main-text p{
+    font-size: 20px;
+    color: rgba(140, 121, 121);
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: 20px;
 }
 /* 本页面响应式 */
 @media screen and (max-width:1300px){

@@ -1,8 +1,27 @@
 html{
     scroll-behavior: smooth;
+    background: url("../img/bg1.jpeg");
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed;
 }
 :root{
     --delay-time:0.8s;
+}
+/* 主体部分 */
+.main-page{
+    /* margin-top: 50vh; */
+    background-color: rgba(255, 255, 255,0.8);
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.title-img{
+    width: 100%;
+    height: 50vh;
+    background: url("../img/bg2.jpg");
+    background-size:100% auto contain;
+    background-repeat:no-repeat ;
+    background-position: center -300px;
 }
 /* 装饰部分 */
 h1 {
@@ -52,6 +71,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    opacity: 0;
 }
 .mycontent li{
     list-style: none;
@@ -66,7 +86,7 @@ p{
     line-height: 1em;
     /* 空心 */
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
 .mycontent li a::before{

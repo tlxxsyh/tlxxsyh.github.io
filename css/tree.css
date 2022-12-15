@@ -88,11 +88,11 @@
 
 .tree li a {
     /* 失去焦点时每个框线 */
-    border: 1px solid rgb(95,145,255);
+    border: 1px solid rgb(110, 110, 110);
     padding: 5px 10px;
     text-decoration: none;
     /* 失去焦点时文字颜色 */
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: arial, verdana, tahoma;
     /* 失去焦点时文字大小 */
     font-size: 18px;
@@ -110,9 +110,9 @@
 .tree li a:hover,
 .tree li a:hover+ul li a {
     /* 获得焦点时块背景、文字颜色、块框 */
-    background: rgba(255, 208, 0, 0.554);
-    color: white;
-    border: 3px solid rgba(255, 208, 0, 0.861);
+    background: rgba(41, 153, 239, 0.338);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgba(41, 153, 239, 0.554);
 }
 
 /*Connector styles on hover*/
@@ -121,5 +121,5 @@
 .tree li a:hover+ul::before,
 .tree li a:hover+ul ul::before {
     /* 焦点时线条颜色 */
-    border-color: rgba(255, 208, 0, 0.861);
+    border-color: rgba(41, 153, 239, 0.554);
 }

@@ -10,10 +10,13 @@ html{
 }
 /* 主体部分 */
 .main-page{
-    /* margin-top: 50vh; */
+    margin-top: 0;
+    padding-top: 5vh;
     background-color: rgba(255, 255, 255,0.8);
     padding-left: 20vw;
     padding-right: 20vw;
+    display: flex;
+    flex-direction: column;
 }
 .title-img{
     width: 100%;
@@ -68,6 +71,7 @@ html{
     /* height: 100%; */
     filter: drop-shadow(0 0 25px var(--clr));
 }
+
 /* 正文字体样式 */
 .main-text h1{
     color:rgb(0, 0, 0);
@@ -88,22 +92,38 @@ html{
 .main-text h2 {
     color:rgb(70, 70, 70);
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 26px;
     cursor: default;
 }
 .main-text h2::after{
     content: " ##";
     opacity: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 .main-text h2:hover::after{
     opacity: 1;
     color: rgb(21, 111, 236);
     transition-duration: var(--delay-time);
 }
+.main-text h3 {
+    color:rgb(47, 106, 242);
+    margin-top: 20px;
+    font-size: 22px;
+    cursor: default;
+}
+.main-text h3::after{
+    content: " ###";
+    opacity: 0;
+    font-size: 16px;
+}
+.main-text h3:hover::after{
+    opacity: 1;
+    color: rgb(225, 255, 0);
+    transition-duration: var(--delay-time);
+}
 .main-text p{
     font-size: 20px;
-    color: rgba(140, 121, 121);
+    color: rgb(79, 69, 69);
     letter-spacing: 1px;
     line-height: 30px;
     margin-top: 20px;
@@ -113,9 +133,8 @@ html{
     .mycontent{
         display: none;
     }
-    #study-tree{
-        margin-top: 100px;
-        /* top: 100px; */
+    .tree{
+        display: none;
     }
     nav{
         /* 让移动端自动显示顶栏 */

@@ -1,9 +1,10 @@
 nav{
-    background-color: rgba(15,19,27,0.8);
+    background-color: rgb(15,19,27);
 }
 .nav-menu li{
     color:aliceblue;
 }
+/* 封面页 */
 .first-page{
     position: relative;
     z-index: 3;
@@ -14,12 +15,13 @@ nav{
 }
 /* 大标题下划线 */
 .title-line{
+    --hr-width:30vw;
     margin-top: 20px;
     height: 3px;
     background-color: white;
     border: 0;
     animation: right-move 2s ease 1 0s;
-    width: 30vw;
+    width: var(--hr-width);
 }
 .first-page p{
     font-family: '汉仪昌黎宋刻本';
@@ -51,6 +53,7 @@ nav{
     border: 0;
     margin-top: 20px;
 }
+/* 区域标题后显示# */
 .title-middle::after{
     content: " #";
     opacity: 0;
@@ -59,7 +62,7 @@ nav{
 .title-middle:hover::after{
     opacity: 1;
     color: rgb(110, 164, 252);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 /* 正文 */
 .main-text{
@@ -87,51 +90,102 @@ nav{
 }
 /* 能力盒子 */
 .ability-box{
-    /* border: 3px solid white; */
-    /* margin-top: 30vh; */
     height: 100px;
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
 }
 .small-ability{
+    position: relative;
     display: flex;
     width: 40%;
     margin-left: 50px;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
 }
 .small-ability p{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
-    flex:1;
 }
 .small-ability hr{
     background-color: rgba(255,255,255,0.3);
     height: 3px;
     border: 0;
     width: 20vw;
-    flex:1;
+    position: relative;
 }
+/* 进度条动效+底部解释说明 */
 #ability-1::before{
-    content: "----------";
-    width: 30%;
+    --hr-width:30%;
+    position: absolute;
+    content: "";
+    height: 3px;
+    border: 0;
+    width: var(--hr-width);
     background-color: rgba(255,255,255,1);
+    animation: right-move 6s ease 1 0s;
+}
+#small-ability-1:hover::after{
+    content: "写前端的能力";
+    color: rgba(255,255,255,0.6);
+    position: absolute;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-left: 12vw;
 }
 #ability-2::before{
-    content: "--------------------------------------------";
-    width: 100%;
+    --hr-width:100%;
+    position: absolute;
+    content: "";
+    height: 3px;
+    border: 0;
+    width: var(--hr-width);
     background-color: rgba(255,255,255,1);
+    animation: right-move 6s ease 1 0s;
+}
+#small-ability-2:hover::after{
+    content: "打游戏水平";
+    color: rgba(255,255,255,0.6);
+    position: absolute;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-left: 12vw;
 }
 #ability-3::before{
-    content: "-------------------------------------";
-    width: 80%;
+    --hr-width:80%;
+    position: absolute;
+    content: "";
+    height: 3px;
+    border: 0;
+    width: var(--hr-width);
     background-color: rgba(255,255,255,1);
+    animation: right-move 6s ease 1 0s;
+}
+#small-ability-3:hover::after{
+    content: "解决bug能力";
+    color: rgba(255,255,255,0.6);
+    position: absolute;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-left: 12vw;
 }
 #ability-4::before{
-    content: "----------------";
-    width: 40%;
+    --hr-width:40%;
+    position: absolute;
+    content: "";
+    height: 3px;
+    border: 0;
+    width: var(--hr-width);
     background-color: rgba(255,255,255,1);
+    animation: right-move 6s ease 1 0s;
+}
+#small-ability-4:hover::after{
+    content: "掌握的编程语言能力";
+    color: rgba(255,255,255,0.6);
+    position: absolute;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-left: 12vw;
 }
 /* 卡片 */
 .web-recommended{
@@ -141,16 +195,56 @@ nav{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-items: space-around;
 }
-.glass-box{
+
+.small-box{
+    margin: 5px;
+    width: 350px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0,0);
+    position: relative;
+    transition-duration: 0.5s;
+    background-color: rgba(255,255,255,0);
+}
+
+.small-box:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.small-box:hover .small-img{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+.small-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.small-right-box{
+    margin-left: 120px;
+    margin-top: -90px;
+}
+.small-title{ 
+    color:rgba(238,238,238,1);
+    font-size: 20px;
+    text-decoration: none;
+}
+.small-text{
+
+    /* margin-left: 120px;
+    margin-top:-50px; */
+    color:rgba(255, 255, 255, 0.6);
+}
+/* .glass-box{
     margin-top: 30px;
     margin-left: 30px;
     border-radius: 15px;
-    /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
-    /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
     box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
     background-color: rgba(255, 255, 255, 0.1);
-    /* backdrop-filter: blur(5px); */
     height: 120px;
     width: 330px;
 }
@@ -168,7 +262,7 @@ nav{
     color:rgba(238,238,238,1);
     font-size: 24px;
     text-decoration: none;
-}
+} */
 /* 页尾 */
 .footer{
     padding-top: 200px;
@@ -199,7 +293,7 @@ nav{
         width: 0;
     }
     to{
-        width: 30vw;
+        width: var(--hr-width);
     }
 }
 @keyframes down-appear {

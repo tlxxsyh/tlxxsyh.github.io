@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/all.css">
     <link rel="stylesheet" href="../../css/blog_index.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/shooting-star.css">
+    <link rel="stylesheet" href="../../css/button-3d.css">
     <title>欢迎来到言念的世界</title>
 </head>
 
@@ -20,7 +22,7 @@
             <li href="#" onclick="index()">首页</li>
             <li href="#" onclick="study()">学习</li>
             <li href="#" onclick="expeiment()">实验</li>
-            <li href="#" onclick="about()">博客</li>
+            <li href="#" onclick="about()">其他</li>
             <li href="#" onclick="feedback()">反馈</li>
             <div class="slider"></div>
         </ul>
@@ -31,12 +33,25 @@
             <div class="bottom-line"></div>
         </div>
     </nav>
-    
-    <!-- 主体部分 -->
-    <div class="first-page">
-        <div id="portrait_box" style="z-index: 5;">
-            <img src="../../img/portrait.jpg" alt="此处丢了个头像图片" id="portrait">
+    <!-- 流星雨背景 -->
+    <div class="background_star" style="position: fixed;z-index:-99;top: 0;left:0;bottom: 0;right: 0;">
+        <div class="night">
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
         </div>
+    </div>
+    <!-- 主体部分 -->
+    <div id="main-page">
+        <div id="button-3d">
+            <a href="https://tlxxsyh.github.io/html/other/food.html" data-text="食物选择"></a>
+        </div>
+        <!-- <div id="portrait_box" style="z-index: 5;">
+            <img src="../../img/portrait.jpg" alt="此处丢了个头像图片" id="portrait">
+        </div> -->
     </div>
     
 </body>

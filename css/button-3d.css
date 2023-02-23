@@ -1,0 +1,53 @@
+#button-3d
+{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+#button-3d a
+{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: sans-serif;
+}
+
+#button-3d a::before,
+#button-3d a::after
+{
+  position: absolute;
+  content: attr(data-text);
+  text-transform: uppercase;
+  width: 180px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#button-3d a::before
+{
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+#button-3d a::after
+{
+  color: rgba(255, 255, 255,1);
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+#button-3d a:hover
+{
+  transform: translateZ(-25px) rotateX(-90deg);
+}

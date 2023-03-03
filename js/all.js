@@ -30,5 +30,5 @@ function about() {
     window.location = "https://tlxxsyh.github.io/html/other/other_index.html";
 }
 function feedback() {
-    window.location = "https://tlxxsyh.github.io/";
+    window.location = "https://tlxxsyh.github.io/html/other/feedback.html";
 }

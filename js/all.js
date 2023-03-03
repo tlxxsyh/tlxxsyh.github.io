@@ -27,7 +27,7 @@ function expeiment() {
     window.location = "https://tlxxsyh.github.io/html/web/web_index.html";
 }
 function about() {
-    window.location = "https://tlxxsyh.github.io/html/blog/other_index.html";
+    window.location = "https://tlxxsyh.github.io/html/other/other_index.html";
 }
 function feedback() {
     window.location = "https://tlxxsyh.github.io/";

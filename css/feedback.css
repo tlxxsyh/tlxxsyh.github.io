@@ -1,0 +1,10 @@
+#main-page {
+    margin-top: 15vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#main-page p{
+    font-size: 50px;
+    color:aliceblue;
+}

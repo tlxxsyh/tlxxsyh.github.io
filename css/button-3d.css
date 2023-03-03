@@ -29,21 +29,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.8);
+  border: 5px solid rgba(255,255,255, 1);/* 边框颜色 */
   box-sizing: border-box;
   border-radius: 5px;
 }
 
 #button-3d a::before
 {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);/* 翻转前字体颜色 */
+  background-color: rgba(255,255,255, 1);/* 背景颜色 */
   transform: rotateY(0deg) translateZ(25px);
 }
 
 #button-3d a::after
 {
-  color: rgba(255, 255, 255,1);
+  color: rgb(255, 255, 255);/* 翻转后字体颜色 */
   transform: rotateX(90deg) translateZ(25px);
 }
 

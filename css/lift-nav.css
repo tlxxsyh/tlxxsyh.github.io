@@ -1,0 +1,43 @@
+/* 电梯导航 */
+.mycontent{
+    height:300px;
+    width: 300px;
+    position:fixed;
+    margin-top: 130px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 0;
+}
+.mycontent li{
+    list-style: none;
+    position: relative;
+    margin-top: 3px;
+}
+.mycontent li a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 1em;
+    /* 空心 */
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+.mycontent li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color:var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+}
+.mycontent li a:hover::before{
+    width: 100%;
+    -webkit-text-stroke: 1px var(--clr);
+    /* height: 100%; */
+    filter: drop-shadow(0 0 25px var(--clr));
+}

@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Jura:200,300,400,500,600,700,800,900");
 html{
     scroll-behavior: smooth;
     background: url("../img/bg1.jpeg");
@@ -10,6 +11,7 @@ html{
 }
 /* 主体部分 */
 .main-page{
+    font-family: 'Jura';
     margin-top: 0;
     padding-top: 5vh;
     background-color: rgba(255, 255, 255,0.8);
@@ -28,61 +30,53 @@ html{
 }
 
 /* 正文字体样式 */
-.main-text h1{
-    color:rgb(0, 0, 0);
+.diary h1{
+    color:rgb(255, 0, 0);
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 50px;
     cursor: default;
 }
-.main-text h1::after{
+.diary h1::after{
     content: " #";
     opacity: 0;
-    font-size: 24px;
+    color: rgb(255, 255, 0);
+    font-size: 40px;
 }
-.main-text h1:hover::after{
+.diary h1:hover::after{
     opacity: 1;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 0);
     transition-duration: var(--delay-time);
 }
-.main-text h2 {
-    color:rgb(70, 70, 70);
-    margin-top: 20px;
-    font-size: 26px;
+.diary h2{
+    color:rgb(0, 0, 255);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
     cursor: default;
+    -webkit-text-stroke: 1px white;
+    /* font-weight: 3000; */
 }
-.main-text h2::after{
+.diary h2::after{
     content: " ##";
     opacity: 0;
-    font-size: 20px;
+    color: rgb(21, 115, 16);
+    -webkit-text-stroke: 0px;
+    font-size: 26px;
 }
-.main-text h2:hover::after{
+.diary h2:hover::after{
     opacity: 1;
-    color: rgb(21, 111, 236);
+    color: rgb(21, 115, 16);
     transition-duration: var(--delay-time);
 }
-.main-text h3 {
-    color:rgb(47, 106, 242);
-    margin-top: 20px;
-    font-size: 22px;
+.diary .subject{
+    color:rgb(72, 141, 219);
+    margin-top: 5px;
+    font-size: 20px;
     cursor: default;
+    /* -webkit-text-stroke: 1px white; */
 }
-.main-text h3::after{
-    content: " ###";
-    opacity: 0;
-    font-size: 16px;
-}
-.main-text h3:hover::after{
-    opacity: 1;
-    color: rgb(225, 255, 0);
-    transition-duration: var(--delay-time);
-}
-.main-text p{
-    font-size: 20px;
-    color: rgb(79, 69, 69);
-    letter-spacing: 1px;
-    line-height: 30px;
-    margin-top: 20px;
-}
+
+
 /* 本页面响应式 */
 @media screen and (max-width:1300px){
     .mycontent{

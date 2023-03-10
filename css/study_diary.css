@@ -13,7 +13,7 @@ html{
 .main-page{
     font-family: 'Jura';
     margin-top: 0;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
     background-color: rgba(255, 255, 255,0.8);
     padding-left: 20vw;
     padding-right: 20vw;
@@ -31,25 +31,26 @@ html{
 
 /* 正文字体样式 */
 .diary h1{
-    color:rgb(255, 0, 0);
+    color:rgb(0, 0, 0);
     margin-top: 50px;
+    margin-bottom: 30px;
     font-size: 50px;
     cursor: default;
 }
 .diary h1::after{
-    content: " #";
+    content: " 2023年3月的学习记录(*^▽^*)";
     opacity: 0;
-    color: rgb(255, 255, 0);
-    font-size: 40px;
+    /* color: rgb(49, 49, 49); */
+    font-size: 30px;
 }
 .diary h1:hover::after{
     opacity: 1;
-    color: rgb(255, 255, 0);
+    color: rgb(77, 77, 77);
     transition-duration: var(--delay-time);
 }
 .diary h2{
     color:rgb(0, 0, 255);
-    margin-top: 30px;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
     font-size: 30px;
     cursor: default;
@@ -57,25 +58,38 @@ html{
     /* font-weight: 3000; */
 }
 .diary h2::after{
-    content: " ##";
+    content: "   今天的收获！";
     opacity: 0;
-    color: rgb(21, 115, 16);
+    color: rgba(64, 64, 64, 0.3);
     -webkit-text-stroke: 0px;
-    font-size: 26px;
+    font-size: 18px;
 }
 .diary h2:hover::after{
     opacity: 1;
-    color: rgb(21, 115, 16);
+    color: rgba(70, 70, 70, 0.3);
     transition-duration: var(--delay-time);
 }
 .diary .subject{
-    color:rgb(72, 141, 219);
-    margin-top: 5px;
-    font-size: 20px;
+    color:rgb(34, 124, 227);
+    margin-top: 3px;
+    margin-right: 10px;
+    font-size: 18px;
     cursor: default;
+    display: inline-block;
+    width: 100px;
     /* -webkit-text-stroke: 1px white; */
 }
-
+.day {
+    border: 3px dashed orange;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255,0.5);
+}
+.day table td{
+    vertical-align: top;
+}
 
 /* 本页面响应式 */
 @media screen and (max-width:1300px){

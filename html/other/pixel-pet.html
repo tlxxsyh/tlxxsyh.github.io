@@ -34,6 +34,14 @@
             <div class="bottom-line"></div>
         </div>
     </nav>
+    <!-- 左下角显示领养信息 -->
+    <div id="dot-message">
+        <div class="dot-context show">
+            <p id="dot-name">123</p>
+            <p id="dot-colorID">456</p>
+            <p id="dot-owner">789</p>
+        </div>
+    </div>
     <!-- 主体部分 -->
     <div class="main-page">
         <!-- 第一页：这个页面是一个高度为100vh的封面，只有一个打字机特效 -->
@@ -42,7 +50,7 @@
         </div>
         <!-- 磨砂玻璃板 -->
         <div class="main-con bg-glass">
-            <div class="context">
+            <div class="context show">
                 <h2>#像素点</h2>
                 <p>认养人：不可认养</p>
                 <blockquote>你可以在下面选择一个喜欢的颜色，如果该颜色未被申请的话，<br>告诉我来领养，你就拥有一个永远存在的小像素点啦。</blockquote>
@@ -56,8 +64,6 @@
                         <div id="already-color">
                             <span class="dot" id="dot_1"></span>
                         </div>
-
-
                     </div>
                 </div>
 
@@ -69,7 +75,9 @@
             </div>
 
         </div>
+
     </div>
+    
     <!-- 页尾 -->
     <div class="footer">
         <p id="footer-title">言念の世界 | Syhang</p>
@@ -89,7 +97,8 @@
             }
         })
     })
+    
 </script>
 <script src="../../js/all.js" type="text/javascript"></script>
-
+<script src="../../js/dot.js" type="text/javascript"></script>
 </html>

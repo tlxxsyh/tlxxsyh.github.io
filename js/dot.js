@@ -66,3 +66,14 @@ $("#dot_4").hover(function () {
 }, function () {
     $("#dot-message").css("opacity", "0");
 });
+$("#dot_5").hover(function () {
+    $("#dot-name").text("伽伽");
+    $("#dot-colorID").text("颜色编号：#0000FF");
+    $("#dot-owner").text("领养者：颖");
+    $("#pixel-name").text("#0000FF");
+    $("#pixel-owner").text("认养人：颖");
+    $(".pixel").css("background-color","#0000FF");
+    $("#pixel-name").css("color","#0000FF");
+}, function () {
+    $("#dot-message").css("opacity", "0");
+});

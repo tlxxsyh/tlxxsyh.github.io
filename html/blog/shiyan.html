@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Food Generator</title>
+</head>
+<body>
+    <h1>Random Food Generator</h1>
+    <p>Click the button below to generate a random food.</p>
+    <button onclick="generateFood()">Generate</button>
+    <p id="food"></p>
+
+    <script>
+        function generateFood() {
+            // 食物列表
+            var foods = ["Pizza", "Hamburger", "Sushi", "Taco", "Burrito", "Pasta", "Curry"];
+
+            // 生成随机数
+            var randomNumber = Math.floor(Math.random() * foods.length);
+
+            // 获取随机食物并显示
+            var foodElement = document.getElementById("food");
+            foodElement.innerHTML = foods[randomNumber];
+        }
+    </script>
+</body>
+</html>

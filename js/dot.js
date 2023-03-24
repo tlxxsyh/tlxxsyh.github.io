@@ -55,3 +55,14 @@ $("#dot_3").hover(function () {
 }, function () {
     $("#dot-message").css("opacity", "0");
 });
+$("#dot_4").hover(function () {
+    $("#dot-name").text("燎原之火星");
+    $("#dot-colorID").text("颜色编号：#FF0000");
+    $("#dot-owner").text("领养者：隐于尘世之仙王");
+    $("#pixel-name").text("#FF0000");
+    $("#pixel-owner").text("认养人：隐于尘世之仙王");
+    $(".pixel").css("background-color","#FF0000");
+    $("#pixel-name").css("color","#FF0000");
+}, function () {
+    $("#dot-message").css("opacity", "0");
+});

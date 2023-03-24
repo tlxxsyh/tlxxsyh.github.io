@@ -16,17 +16,17 @@ body {
 }
 
 #page-title {
-    color: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
     font-size: 50px;
 }
 
 .main-con {
     /* border: 3px solid black; */
     width: 80vw;
-    height: 800px;
+    height: 1300px;
     margin-left: 10vw;
     border-radius: 15px;
-    
+
 }
 
 .main-page {
@@ -58,33 +58,36 @@ body {
     position: absolute;
     z-index: 3;
 }
+
 .context {
     padding: 30px;
 }
 
 /* 小标题 */
-.context h2 {
+#pixel-name {
     color: rgb(24, 159, 212);
     font-size: 40px;
     margin-bottom: 10px;
     cursor: default;
 }
-
+/* 认养人 */
 .context p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
+    font-weight: 900;
 }
 
 /* 引用模块样式 */
 blockquote {
     width: 70vw;
-    border-left: 5px solid rgb(73,175,238);
+    border-left: 5px solid rgb(73, 175, 238);
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
     color: rgb(51, 51, 51);
 }
+
 /* 像素点的大盒子 */
 #two-box {
     width: 100%;
@@ -92,13 +95,16 @@ blockquote {
     display: flex;
 }
 
-#two-box p{
+/* 已被领养的文字 */
+#two-box p {
     margin-left: 100px;
     margin-top: 120px;
     color: black;
     font-size: 25px;
     cursor: default;
 }
+
+/* 已被领养的颜色的框 */
 #already-color {
     width: 400px;
     height: 200px;
@@ -107,15 +113,18 @@ blockquote {
     margin-left: 100px;
     display: flex;
 }
+
 .dot {
     width: 20px;
     height: 20px;
 }
+
 .dot:hover {
     transform: scale(1.5);
     transition-duration: 1s;
 }
 
+/* 左侧白板 */
 #color-box {
     /* border: 2px solid black; */
     width: 500px;
@@ -126,6 +135,7 @@ blockquote {
     margin-bottom: 10px;
 }
 
+/* 左侧单个像素点 */
 .pixel {
     position: absolute;
     width: 10px;
@@ -133,31 +143,47 @@ blockquote {
     margin-left: 245px;
     margin-top: 245px;
     background-color: black;
-    animation: jump-up infinite 5s;
+    animation: jump-up 5s;
+    animation-iteration-count: 3;
 }
 
-/* .pixel:hover {
-    animation: jump-up infinite 2s ease;
-} */
 @keyframes jump-up {
-    0%   {top:0px;}
-	50%  {top:-196px}
-	100% {top:0px;}
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: -196px
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
+/* 选择按钮等 */
 .context .button {
-    border: 1px solid orange;
-    background-color: rgba(0,0,0,0);
+    border: 2px solid orange;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     width: 100px;
     height: 30px;
 }
 
-#color-text {
-    border-radius: 5px;
-    border: 0;
+.context .button:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
 }
 
+/* 选择按钮左侧编号显示框 */
+#color-text {
+    border-radius: 3px;
+    border: 0;
+    height: 20px;
+}
+
+/* 左下角信息卡片 */
 #dot-message {
     opacity: 0;
     z-index: 10;
@@ -165,7 +191,7 @@ blockquote {
     width: 300px;
     height: 20vh;
     margin-top: 78vh;
-    margin-left: 10px;
+    margin-left: -1000px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .8);
     position: fixed;
     background: url("../img/bg3.png");
@@ -184,4 +210,32 @@ blockquote {
     right: 0;
     /* box-shadow: inset 0 0 2000px rgba(255,255,255, 0.2); */
     filter: blur(3px);
+}
+
+/* 像素点使用介绍文字 */
+.introduce {
+    font-weight: 500;
+}
+.introduce h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: rgb(13, 19, 190);
+}
+/* .introduce h2::before {
+    content: "#";
+    font-size: 20px;
+    color:brown;
+    opacity: 0;
+    cursor: default;
+}
+
+.introduce h2:hover::after {
+    opacity: 1;
+    transition-duration: 0.8s);
+} */
+.introduce p {
+    font-size: 20px;
+    /* line-height: 15px; */
+    color: rgb(30, 30, 30);
 }

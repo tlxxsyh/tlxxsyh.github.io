@@ -26,6 +26,7 @@ body {
     height: 800px;
     margin-left: 10vw;
     border-radius: 15px;
+    
 }
 
 .main-page {
@@ -107,8 +108,8 @@ blockquote {
     display: flex;
 }
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 .dot:hover {
     transform: scale(1.5);
@@ -135,9 +136,9 @@ blockquote {
     animation: jump-up infinite 5s;
 }
 
-.pixel:hover {
+/* .pixel:hover {
     animation: jump-up infinite 2s ease;
-}
+} */
 @keyframes jump-up {
     0%   {top:0px;}
 	50%  {top:-196px}
@@ -162,8 +163,8 @@ blockquote {
     z-index: 10;
     /* position: absolute; */
     width: 300px;
-    height: 25vh;
-    margin-top: 73vh;
+    height: 20vh;
+    margin-top: 78vh;
     margin-left: 10px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .8);
     position: fixed;

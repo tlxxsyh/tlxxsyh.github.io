@@ -143,8 +143,8 @@ blockquote {
     margin-left: 245px;
     margin-top: 245px;
     background-color: black;
-    animation: jump-up 5s;
-    animation-iteration-count: 3;
+    animation: jump-up 5s 3;
+    /* animation-iteration-count: 3; */
 }
 
 @keyframes jump-up {
@@ -176,6 +176,9 @@ blockquote {
     transition-duration: 0.5s;
 }
 
+.context .button:focus {
+    outline: none;
+}
 /* 选择按钮左侧编号显示框 */
 #color-text {
     border-radius: 3px;

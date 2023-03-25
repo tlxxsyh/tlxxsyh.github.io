@@ -12,6 +12,8 @@ function searchColor(){
     colorStr = document.getElementById("color-choose").value;
     $(".pixel").css("background-color",colorStr);
     document.getElementById("color-text").value=colorStr;
+    $(".pixel").animate({top:"-196px"},"0.7s");
+    $(".pixel").animate({top:"0px"},"0.7s");
 }
 // 随机颜色按钮：随机返回一个颜色
 function randomColor(){
@@ -19,6 +21,8 @@ function randomColor(){
     $(".pixel").css("background-color",colorStr);
     document.getElementById("color-text").value=colorStr;
     document.getElementById("color-choose").value=colorStr;
+    $(".pixel").animate({top:"-196px"},"0.7s");
+    $(".pixel").animate({top:"0px"},"0.7s");
 }
 // 每个人的颜色信息
 $("#dot_1").hover(function () {
@@ -74,6 +78,17 @@ $("#dot_5").hover(function () {
     $("#pixel-owner").text("认养人：颖");
     $(".pixel").css("background-color","#0000FF");
     $("#pixel-name").css("color","#0000FF");
+}, function () {
+    $("#dot-message").css("opacity", "0");
+});
+$("#dot_6").hover(function () {
+    $("#dot-name").text("熊熊");
+    $("#dot-colorID").text("颜色编号：#51A8DD");
+    $("#dot-owner").text("领养者：dazp");
+    $("#pixel-name").text("#51A8DD");
+    $("#pixel-owner").text("认养人：dazp");
+    $(".pixel").css("background-color","#51A8DD");
+    $("#pixel-name").css("color","#51A8DD");
 }, function () {
     $("#dot-message").css("opacity", "0");
 });

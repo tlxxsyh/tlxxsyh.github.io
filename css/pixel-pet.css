@@ -146,8 +146,8 @@ blockquote {
     position: absolute;
     width: 10px;
     height: 10px;
-    margin-left: 245px;
-    margin-top: 245px;
+    margin-left: 145px;
+    margin-top: 145px;
     background-color: black;
     animation: jump-up 5s 3;
     /* animation-iteration-count: 3; */
@@ -159,7 +159,7 @@ blockquote {
     }
 
     50% {
-        top: -196px
+        top: -98px
     }
 
     100% {

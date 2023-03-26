@@ -12,7 +12,7 @@ function searchColor(){
     colorStr = document.getElementById("color-choose").value;
     $(".pixel").css("background-color",colorStr);
     document.getElementById("color-text").value=colorStr;
-    $(".pixel").animate({top:"-196px"},"0.7s");
+    $(".pixel").animate({top:"-98px"},"0.7s");
     $(".pixel").animate({top:"0px"},"0.7s");
 }
 // 随机颜色按钮：随机返回一个颜色

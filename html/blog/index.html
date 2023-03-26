@@ -1,11 +1,127 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello,world</title>
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/pixel-pet.css">
+    <link rel="stylesheet" href="../../css/printer.css">
+    <link rel="stylesheet" href="../../css/dot.css">
+    <script src="../../js/jquery-3.6.2.min.js"></script>
+    <title>欢迎来到言念的世界</title>
 </head>
+
 <body>
-    hello,world!
+    <!-- 导航栏 -->
+    <nav>
+        <!-- 左侧logo -->
+        <div class="logo">言念の世界</div>
+        <!-- 导航栏主体 -->
+        <ul class="nav-menu">
+            <li href="#" onclick="index()">首页</li>
+            <li href="#" onclick="study()">学习</li>
+            <li href="#" onclick="expeiment()">实验</li>
+            <li href="#" onclick="about()">其他</li>
+            <li href="#" onclick="feedback()">反馈</li>
+            <div class="slider"></div>
+        </ul>
+        <!-- 三个横线 -->
+        <div class="burger">
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="bottom-line"></div>
+        </div>
+    </nav>
+    <!-- 左下角显示领养信息 -->
+    <div id="dot-message">
+        <div class="dot-context show">
+            <p id="dot-name">123</p>
+            <p id="dot-colorID">456</p>
+            <p id="dot-owner">789</p>
+        </div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="main-page">
+        <div id="first-page">
+            <h1 id="page-title">小像素点</h1>
+        </div>
+        <!-- 磨砂玻璃板 -->
+        <div class="main-con bg-glass">
+            <!-- 显示内容层，防止被磨砂玻璃伪类覆盖 -->
+            <div class="context show">
+                <h2 id="pixel-name">#像素点</h2>
+                <p id="pixel-owner">认养人：不可认养</p>
+                <blockquote>你可以在下面选择一个喜欢的颜色，如果该颜色未被申请的话，<br>告诉我来领养，你就拥有一个永远存在的小像素点啦。</blockquote>
+                <!-- 颜色展示板 -->
+                <div id="two-box">
+                    <div id="color-box">
+                        <div class="pixel"></div>
+                    </div>
+                    <div id="already-box">
+                        <p>已领养的颜色：</p>
+                        <div id="already-color">
+                            <span class="dot" id="dot_1"></span>
+                            <span class="dot" id="dot_2"></span>
+                            <span class="dot" id="dot_3"></span>
+                            <span class="dot" id="dot_4"></span>
+                            <span class="dot" id="dot_5"></span>
+                            <span class="dot" id="dot_6"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="operate_1">
+                    <div style="margin-top: 10px;">
+                        颜色：
+                        <input type="text" value="#000000" id="color-text" disabled="true">
+                        <input type="color" id="color-choose">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input class="button" type="button" value="展示" onclick="searchColor()">
+                        <input class="button" type="button" value="随机" onclick="randomColor()">
+                    </div>
+                    
+                </div>
+                <div style="height:40px;"></div>
+                <div class="introduce">
+                    <h2>关于像素点</h2>
+                    <p>领养像素点的灵感其实来源于看到别人的网站里有这个功能，所以我就自己对着复刻了一个^_^</p>
+                    <p>我原先以为这个能2小时就写出来来着，没想到这一个网页我就写了一整天T_T</p>
+                    <h2>如何认养像素点</h2>
+                    <p>首先在上方的颜色选择器处挑选一个你喜欢的颜色，然后点击“查询”预览像素点的样子。
+                    </p>
+                    <p>接着把你想给像素点起的昵称、颜色编号、认养者昵称告诉我就好啦！</p>
+                    <h2>像素点可以做什么</h2>
+                    <p>你可以与像素点进行简单的互动操作，<span style="text-decoration:line-through">大概就像是云睡觉一样？</span></p>
+                    <p>当然，最重要的是，你在本网站拥有了一个，只属于你的颜色的像素点\(^o^)/~</p>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- 页尾 -->
+    <div class="footer">
+        <p id="footer-title">言念の世界 | Syhang</p>
+        <p id="footer-sign">我的肩上是风，风上是闪烁的星群</p>
+    </div>
 </body>
+<script>
+    // 获取页面偏移量
+    $(function () {
+        $(document).scroll(function () {
+            var y_position = $(this).scrollTop();
+            if (y_position > 0) {
+                $('nav').css("background-color", "rgba(255, 255, 255, 0.8)");
+            }
+            else if (y_position < 10) {
+                $('nav').css("background-color", "rgba(255, 255, 255, 0.3)");
+            }
+        })
+    })
+
+</script>
+<script src="../../js/all.js" type="text/javascript"></script>
+<script src="../../js/dot.js" type="text/javascript"></script>
+
 </html>

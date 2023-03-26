@@ -4,7 +4,7 @@ $(".dot").hover(function () {
     $("#dot-message").css("opacity", "1");
 }, function () {
     $("#dot-message").css("opacity", "0");
-    $("#dot-message").css("margin-left", "10px");
+    $("#dot-message").css("margin-left", "-1000px");
 });
 // 拾色器按钮等功能的实现
 // 寻找颜色按钮：修改左边展示的像素点颜色，并且修改颜色值

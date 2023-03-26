@@ -44,7 +44,6 @@
     </div>
     <!-- 主体部分 -->
     <div class="main-page">
-        <!-- 第一页：这个页面是一个高度为100vh的封面，只有一个打字机特效 -->
         <div id="first-page">
             <h1 id="page-title">小像素点</h1>
         </div>
@@ -60,7 +59,7 @@
                     <div id="color-box">
                         <div class="pixel"></div>
                     </div>
-                    <div>
+                    <div id="already-box">
                         <p>已领养的颜色：</p>
                         <div id="already-color">
                             <span class="dot" id="dot_1"></span>
@@ -73,11 +72,16 @@
                     </div>
                 </div>
                 <div id="operate_1">
-                    颜色：
-                    <input type="text" value="#000000" id="color-text" disabled="true">
-                    <input type="color" id="color-choose">
-                    <input class="button" type="button" value="展示" onclick="searchColor()">
-                    <input class="button" type="button" value="随机" onclick="randomColor()">
+                    <div style="margin-top: 10px;">
+                        颜色：
+                        <input type="text" value="#000000" id="color-text" disabled="true">
+                        <input type="color" id="color-choose">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input class="button" type="button" value="展示" onclick="searchColor()">
+                        <input class="button" type="button" value="随机" onclick="randomColor()">
+                    </div>
+                    
                 </div>
                 <div style="height:40px;"></div>
                 <div class="introduce">
@@ -93,8 +97,6 @@
                     <p>当然，最重要的是，你在本网站拥有了一个，只属于你的颜色的像素点\(^o^)/~</p>
                 </div>
             </div>
-
-        </div>
 
     </div>
 

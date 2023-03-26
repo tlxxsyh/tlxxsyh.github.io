@@ -23,7 +23,9 @@ body {
 .main-con {
     /* border: 3px solid black; */
     width: 80vw;
-    height: 1450px;
+    height: 1200px;
+    /* height: auto; */
+    overflow: hidden;
     margin-left: 10vw;
     border-radius: 15px;
 
@@ -79,7 +81,8 @@ body {
 
 /* 引用模块样式 */
 blockquote {
-    width: 70vw;
+    /* border:3px solid green; */
+    width: 85%;
     border-left: 5px solid rgb(73, 175, 238);
     padding: 15px;
     margin-top: 10px;
@@ -91,14 +94,18 @@ blockquote {
 /* 像素点的大盒子 */
 #two-box {
     width: 100%;
+    margin-left: -30px;
     /* border: 1px solid red; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+#alread-box{
+    width: 300px;
+}
 /* 已被领养的文字 */
 #two-box p {
-    margin-left: 100px;
-    margin-top: 120px;
     color: black;
     font-size: 25px;
     cursor: default;
@@ -106,12 +113,11 @@ blockquote {
 
 /* 已被领养的颜色的框 */
 #already-color {
-    width: 400px;
+    width: 300px;
     height: 200px;
     /* border: 1px solid rgb(123, 123, 123); */
-    /* margin-top: 150px; */
-    margin-left: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .dot {
@@ -127,8 +133,8 @@ blockquote {
 /* 左侧白板 */
 #color-box {
     /* border: 2px solid black; */
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: white;
     background-size: cover;
     position: relative;
@@ -161,6 +167,13 @@ blockquote {
     }
 }
 
+/* 操作框 */
+#operate_1 {
+    display: flex;
+    /* border: 3px solid black; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 /* 选择按钮等 */
 .context .button {
     border: 2px solid orange;
@@ -217,6 +230,8 @@ blockquote {
 
 /* 像素点使用介绍文字 */
 .introduce {
+    width: 90%;
+    /* border:3px solid black; */
     font-weight: 500;
 }
 .introduce h2 {
@@ -225,20 +240,15 @@ blockquote {
     margin-top: 20px;
     color: rgb(13, 19, 190);
 }
-/* .introduce h2::before {
-    content: "#";
-    font-size: 20px;
-    color:brown;
-    opacity: 0;
-    cursor: default;
-}
-
-.introduce h2:hover::after {
-    opacity: 1;
-    transition-duration: 0.8s);
-} */
 .introduce p {
     font-size: 20px;
     /* line-height: 15px; */
     color: rgb(30, 30, 30);
+}
+
+/* 移动端样式 */
+@media screen and (max-width:768px){
+    .main-con {
+        height: 1800px;
+    }
 }

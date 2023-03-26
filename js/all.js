@@ -32,6 +32,3 @@ function about() {
 function feedback() {
     window.location = "https://tlxxsyh.github.io/html/other/feedback.html";
 }
-function show(){
-    alert("123");
-}

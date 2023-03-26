@@ -1,0 +1,24 @@
+.bg-glass {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    position: relative;
+    background: inherit;
+}
+
+.bg-glass:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+}
+
+/* 让玻璃板上面的文字不被覆盖 */
+.show {
+    /* z-index如果想要起作用的话，那么定位一定要设为absolute */
+    position: absolute;
+    z-index: 3;
+}

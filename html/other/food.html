@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/food.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/glass.css">
+    <title>欢迎来到言念的世界</title>
+</head>
+
+<body onload="writeFood()">
+    <!-- 导航栏 -->
+    <nav>
+        <!-- 左侧logo -->
+        <div class="logo">言念の世界</div>
+        <!-- 导航栏主体 -->
+        <ul class="nav-menu">
+            <li href="#" onclick="index()">首页</li>
+            <li href="#" onclick="study()">学习</li>
+            <li href="#" onclick="expeiment()">实验</li>
+            <li href="#" onclick="about()">其他</li>
+            <li href="#" onclick="feedback()">反馈</li>
+            <div class="slider"></div>
+        </ul>
+        <!-- 三个横线 -->
+        <div class="burger">
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="bottom-line"></div>
+        </div>
+    </nav>
+    <!-- 主体部分 -->
+    <div class="all">
+        <div class="main bg-glass">
+            <div class="context show">
+                <h1>这顿吃什么呢</h1>
+                <hr>
+                <p class="introduce">在下方的输入框里填上需要帮你选择的备选食物们（用单个空格分隔），然后点击“帮我选”即可自动选择这顿吃什么食物。</p>
+                <p id="food">食物</p>
+                <div id="btn-text">
+                    <input type="button" value="帮我选" id="btn_choose" onclick="generateFood()">
+                    <textarea id="text_choose" cols="30" rows="10" required></textarea>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- 页尾 -->
+    <div class="footer">
+        <p id="footer-title">言念の世界 | Syhang</p>
+        <p id="footer-sign">我的肩上是风，风上是闪烁的星群</p>
+    </div>
+    </div>
+
+</body>
+<script src="../../js/all.js" type="text/javascript"></script>
+<script>
+    function writeFood() {
+        document.getElementById("text_choose").value = "麻辣拌 方便面 烧烤 娃娃鱼 煎豆腐 奶茶 年糕 炸鸡 烤鸭 叉烧饭 炒河粉 水煮鱼 酸菜鱼 干锅 羊肉泡馍 牛肉汤 凉皮 板面 盒饭 辣子鸡 披萨 汉堡 杂粮煎饼 水饺 馄饨 火锅 手抓饼 香酱饼 肉灌饼 甜筒 圣代 水果捞 面包 小蛋糕 蛋挞 鳕鱼饭";
+    }
+    function generateFood() {
+        // 食物列表
+        var foods = document.getElementById("text_choose").value.split(" ");
+
+        // 生成随机数
+        var randomNumber = Math.floor(Math.random() * foods.length);
+
+        // 获取随机食物并显示
+        var foodElement = document.getElementById("food");
+        foodElement.innerHTML = foods[randomNumber];
+    }
+</script>
+</html>

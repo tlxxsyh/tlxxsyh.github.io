@@ -1,0 +1,83 @@
+body {
+    background-image: url(../img/bg6.jpg);
+    background-size: cover;
+    /* fixed对于磨砂玻璃很重要 */
+    background-attachment: fixed;
+    background-position: center center;
+    
+}
+.all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+    margin-top: 20vh;
+    /* margin-left: 30vw; */
+    width: 80vw;
+    height: 90vh;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.536);
+    
+}
+
+
+.show {
+    background-color: rgba(255, 255, 255, 0.717) !important;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+hr{
+    color: rgba(0, 255, 255, 0.536);
+    border: none;
+    border-top: 3px solid aqua;
+    width: 30%;
+    margin-left: 35%;
+    
+}
+
+.introduce {
+    /* background-color: rgba(240, 255, 255, 0.66); */
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(35, 35, 35);
+}
+
+#food {
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+}
+
+#btn-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#btn_choose {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#text_choose {
+    margin-top: 20px;
+    height: 180px;
+    width: 80%;
+    font-size: 18px;
+    padding: 15px;
+}

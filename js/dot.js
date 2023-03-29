@@ -12,7 +12,7 @@ function searchColor(){
     colorStr = document.getElementById("color-choose").value;
     $(".pixel").css("background-color",colorStr);
     document.getElementById("color-text").value=colorStr;
-    $(".pixel").animate({top:"-98px"},"0.7s");
+    $(".pixel").animate({top:"40%"},"0.7s");
     $(".pixel").animate({top:"0px"},"0.7s");
 }
 // 随机颜色按钮：随机返回一个颜色
@@ -21,7 +21,7 @@ function randomColor(){
     $(".pixel").css("background-color",colorStr);
     document.getElementById("color-text").value=colorStr;
     document.getElementById("color-choose").value=colorStr;
-    $(".pixel").animate({top:"-196px"},"0.7s");
+    $(".pixel").animate({top:"-40%"},"0.7s");
     $(".pixel").animate({top:"0px"},"0.7s");
 }
 //下一个背景
@@ -30,15 +30,15 @@ function nextBgImg() {
     var url=$("#color-box").css("background-image");
     var num = url.split("_");
     num=num[1];
-    if(num==2){
+    if(num==17){
         num=1;
     }
     else{
         num++;
     }
-    url="url(../img/pixel-bg/bg_"+num+"_.jpg)";
+    url="url(../../img/pixel-bg/bg_"+num+"_.jpg)";
     // alert(url);
-    $("#color-box").css("background","url(../img/pixel-bg/bg_2_.jpg)");
+    $("#color-box").css("background",url);
 }
 // 每个人的颜色信息
 $("#dot_1").hover(function () {

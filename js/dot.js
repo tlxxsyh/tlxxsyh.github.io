@@ -24,6 +24,22 @@ function randomColor(){
     $(".pixel").animate({top:"-196px"},"0.7s");
     $(".pixel").animate({top:"0px"},"0.7s");
 }
+//下一个背景
+function nextBgImg() {
+    var i=1;
+    var url=$("#color-box").css("background-image");
+    var num = url.split("_");
+    num=num[1];
+    if(num==2){
+        num=1;
+    }
+    else{
+        num++;
+    }
+    url="url(../img/pixel-bg/bg_"+num+"_.jpg)";
+    // alert(url);
+    $("#color-box").css("background","url(../img/pixel-bg/bg_2_.jpg)");
+}
 // 每个人的颜色信息
 $("#dot_1").hover(function () {
     // alert("123");

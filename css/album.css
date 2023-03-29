@@ -1,0 +1,41 @@
+body {
+    background-image: url(../img/bg8.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.main {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.container{
+    /* 将元素分为5列 */
+    column-count: 4;
+    /* 设置列之间的间隙 */
+    column-gap: 30px;
+}
+.item{
+    padding: 3px;
+}
+.item img{
+    border: 15px solid rgb(255, 255, 255);
+    display: block;
+    width: 100%;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition-duration: 0.8s;
+}
+
+@media screen and (max-width:500px){
+    .container {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1199px){
+    .container {
+        column-count: 3;
+    }
+}

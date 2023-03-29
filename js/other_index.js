@@ -7,3 +7,6 @@ function hack() {
 function food() {
     window.location = "https://tlxxsyh.github.io/html/other/food.html";
 }
+function album() {
+    window.location = "https://tlxxsyh.github.io/html/other/album.html";
+}

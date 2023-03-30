@@ -10,7 +10,7 @@ body {
     margin-right: 10vw;
 }
 .container{
-    /* 将元素分为5列 */
+    /* 将元素分为4列 */
     column-count: 4;
     /* 设置列之间的间隙 */
     column-gap: 30px;
@@ -26,6 +26,11 @@ body {
 .item:hover{
     transform: scale(1.05);
     transition-duration: 0.8s;
+}
+.item img:click {
+    height: 100vh;
+    width: auto;
+
 }
 
 @media screen and (max-width:500px){

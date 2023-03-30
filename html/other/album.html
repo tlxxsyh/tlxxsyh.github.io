@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../../css/all.css">
     <link rel="stylesheet" href="../../css/album.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/lightbox.min.css">
+    <script src="../../js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+
     <title>欢迎来到言念的世界</title>
 </head>
 
@@ -33,10 +36,13 @@
         </div>
     </nav>
     <!-- 主体部分 -->
+        <!-- lightbox例子 -->
+        <!-- <a data-lightbox="mygallery" href="../../img/album/1.jpg" style="width: 500px;"><img style="width: 500px;" src="../../img/album/1.jpg"></a> -->
         <div class="main">
             <div class="container" id="app">
                 <div class="item" v-for="item in 36">
-                    <img :src="'../../img/album/'+item+'.jpg'" alt="">
+                    <a :href="'../../img/album/'+item+'.jpg'" data-lightbox="mygallery"><img :src="'../../img/album/'+item+'.jpg'" alt=""></a>
+                    
                 </div>
             </div>
         </div>

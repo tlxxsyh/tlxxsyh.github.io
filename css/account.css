@@ -1,0 +1,7 @@
+body {
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    /* fixed对于磨砂玻璃很重要 */
+    background-attachment: fixed;
+    background-position: center center;
+}

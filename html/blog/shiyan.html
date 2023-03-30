@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Random Food Generator</title>
-</head>
-<body>
-    <h1>Random Food Generator</h1>
-    <p>Click the button below to generate a random food.</p>
-    <button onclick="generateFood()">Generate</button>
-    <p id="food"></p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圆弧转动动画</title>
+  </head>
+  <style>
+    
+  </style>
 
-    <script>
-        function generateFood() {
-            实验
-            // 食物列表
-            var foods = ["Pizza", "Hamburger", "Sushi", "Taco", "Burrito", "Pasta", "Curry"];
-
-            // 生成随机数
-            var randomNumber = Math.floor(Math.random() * foods.length);
-
-            // 获取随机食物并显示
-            var foodElement = document.getElementById("food");
-            foodElement.innerHTML = foods[randomNumber];
-        }
-    </script>
-</body>
+  <body>
+    <section>
+      <div class="box"></div>
+      <div class="box-circle" style="--d: 0.2s"></div>
+      <div class="box-circle" style="--d: 1.2s"></div>
+      <div class="box-circle" style="--d: 2.2s"></div>
+    </section>
+  </body>
 </html>

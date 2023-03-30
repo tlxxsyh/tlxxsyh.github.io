@@ -1,0 +1,24 @@
+#footer-title {
+    color: white !important;
+}
+#footer-sign {
+    color:white;
+}
+.main {
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.alert {
+    margin-top: 30vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 60px;
+    color: orange;
+    margin-top: 30px;
+}

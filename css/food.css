@@ -66,6 +66,7 @@ hr{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    
 }
 
 #btn_choose {
@@ -80,4 +81,10 @@ hr{
     width: 80%;
     font-size: 18px;
     padding: 15px;
+    background-image: url(https://oss.amogu.cn/blog/sakura/images/comment_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    border-color: rgb(221,221,221);
 }

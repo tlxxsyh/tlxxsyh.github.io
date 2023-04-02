@@ -54,13 +54,13 @@ $("#dot_1").hover(function () {
     $("#dot-message").css("opacity", "0");
 });
 $("#dot_2").hover(function () {
-    $("#dot-name").text("Frankie的像素点");
-    $("#dot-colorID").text("颜色编号：#00FFFF");
+    $("#dot-name").text("可爱的小像素点");
+    $("#dot-colorID").text("颜色编号：#C7BDF6");
     $("#dot-owner").text("领养者：Frankie");
-    $("#pixel-name").text("#00FFFF");
+    $("#pixel-name").text("#C7BDF6");
     $("#pixel-owner").text("认养人：Frankie");
-    $(".pixel").css("background-color","#00FFFF");
-    $("#pixel-name").css("color","#00FFFF");
+    $(".pixel").css("background-color","#C7BDF6");
+    $("#pixel-name").css("color","#C7BDF6");
 }, function () {
     $("#dot-message").css("opacity", "0");
 });

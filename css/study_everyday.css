@@ -55,11 +55,12 @@ h1 {
 /* 表格大小限制 */
 .book-table .td-title {
     padding-left: 10px;
-    width: 20%;
+    width: 25%;
 }
 .td-phase {
     width: 10%;
 }
+
 /* 书本类型 */
 .question {
     color: rgb(222,222,228);

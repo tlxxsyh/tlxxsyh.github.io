@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.sector {
+    position: relative;
+    overflow: hidden;
+}
+/* 1.上横 */
+.sector span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,transparent,#17f3fd);
+    animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+/* 2.右竖 */
+.sector span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#17f3fd);
+    animation: animate_two 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_two {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%)
+    }
+}
+/* 3.下横 */
+.sector span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,transparent,#17f3fd);
+    animation: animate_three 2s linear infinite;
+}
+
+@keyframes animate_three {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+/* 4.左竖 */
+.sector span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,#17f3fd);
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%)
+    }
+}
+
+/* .sector-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+} */

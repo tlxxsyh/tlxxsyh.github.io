@@ -28,23 +28,23 @@ h1 {
 }
 
 .daily-task th {
-    background-color: rgb(129,216,207);
+    background-color: rgb(222, 44, 115);
     color: rgb(248,245,214);
     height: 80px;
     font-size: 35px;
 }
 
 tr:nth-child(even) {
-    background-color: rgb(255,231,111);
+    background-color: rgb(199,189,246);
 }
 tr:nth-child(even) .td-title{
-    color: rgb(0,46,166);
+    color: rgb(0, 0, 0);
 }
 tr:nth-child(odd) {
-    background-color: rgb(0,46,166);
+    background-color: rgb(213, 229, 230);
 }
 tr:nth-child(odd) .td-title{
-    color: rgb(255,231,111);
+    color: rgb(0, 0, 0);
 }
 
 .daily-task tr {
@@ -63,7 +63,7 @@ tr:nth-child(odd) .td-title{
 
 .daily-task .td-description {
     font-size: 18px;
-    color:rgb(184, 184, 184);
+    color:rgb(29, 29, 29);
 }
 
 #height-50px {

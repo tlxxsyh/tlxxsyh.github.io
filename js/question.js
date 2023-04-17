@@ -5,6 +5,7 @@ window.onload = function () {
 }
 //搜索题目，如果输入空值就会返回所有题目
 function search() {
+
     //先清空表格内容
     $('table').empty();
     var text_search = $('#text-search').val();
@@ -26,40 +27,45 @@ function search() {
                 //查找指定题目
                 if (question.indexOf(text_search) != -1) {
                     //添加元素，注意td一定要放在tr里，而单独tr也无法显示
-    $(".q-table").append("<tr>" + "<td>" + question + "</td>" + "</tr>");
-    //遍历有多少个选项
-    for (var j = 0; j < option.length; j++) {
-        // 先与ascii字符拼接（选项号）
-        option[j] = String.fromCharCode(65 + j) + ". " + option[j];
-        // 如果是正确答案就标黄色，否则直接输出
-        if (answer.indexOf((j + 1).toString()) != -1) {
+                    $(".q-table").append("<tr>" + "<td>" + question + "</td>" + "</tr>");
+                    //遍历有多少个选项
+                    for (var j = 0; j < option.length; j++) {
+                        // 先与ascii字符拼接（选项号）
+                        option[j] = String.fromCharCode(65 + j) + ". " + option[j];
+                        // 如果是正确答案就标黄色，否则直接输出
+                        if (answer.indexOf((j + 1).toString()) != -1) {
 
-            $(".q-table").append("<tr bgcolor='yellow'>" + "<td>" + option[j] + "</td>" + "</tr>");
-        }
-        else {
-            $(".q-table").append("<tr>" + "<td>" + option[j] + "</td>" + "</tr>");
-        }
-    }
-    //输出答案
-    //单选或者多选时
-    var ans = "";//每次开始前答案字符串要置空
-    if (type == "multiple-answer" || type == "multiple-choice") {
-        //遍历答案中的数字，每隔一个数字转一次字符再拼接，最后去掉最前面的顿号
-        for (var k = 0; k < answer.length; k = k + 2) {
-            num = answer[k];
-            num = parseInt(num);
-            ans = ans + "、" + String.fromCharCode(64 + num);
-        }
-        ans = ans.slice(1);
-    }
+                            $(".q-table").append("<tr bgcolor='yellow'>" + "<td>" + option[j] + "</td>" + "</tr>");
+                        }
+                        else {
+                            $(".q-table").append("<tr>" + "<td>" + option[j] + "</td>" + "</tr>");
+                        }
+                    }
+                    //输出答案
+                    //单选或者多选时
+                    var ans = "";//每次开始前答案字符串要置空
+                    if (type == "multiple-answer" || type == "multiple-choice") {
+                        //遍历答案中的数字，每隔一个数字转一次字符再拼接，最后去掉最前面的顿号
+                        for (var k = 0; k < answer.length; k = k + 2) {
+                            num = answer[k];
+                            num = parseInt(num);
+                            ans = ans + "、" + String.fromCharCode(64 + num);
+                        }
+                        ans = ans.slice(1);
+                    }
 
-    //输出答案字符串，然后输出换行
-    $(".q-table").append("<tr bgcolor='red'>" + "<td>答案：" + ans + "</td>" + "</tr>");
-    $(".q-table").append("<br>")
+                    //输出答案字符串，然后输出换行
+                    $(".q-table").append("<tr bgcolor='red'>" + "<td>答案：" + ans + "</td>" + "</tr>");
+                    $(".q-table").append("<br>")
                 }
             }
+            str = "共计搜到题目数："+ json.item.length;
+            $('.tip').text(str);
+            // alert(json.item.length);
         }
     }
+
+
 }
 
 //显示所有题目
@@ -116,5 +122,5 @@ function allQuestion() {
 
 //输出答案
 function printQuestion() {
-    
+
 }

@@ -5,7 +5,7 @@ window.onload = function () {
 }
 //搜索题目，如果输入空值就会返回所有题目
 function search() {
-
+    var q_num = 0;
     //先清空表格内容
     $('table').empty();
     var text_search = $('#text-search').val();
@@ -26,6 +26,8 @@ function search() {
                 var type = json.item[i].type;
                 //查找指定题目
                 if (question.indexOf(text_search) != -1) {
+                    //增加一题
+                    q_num++;
                     //添加元素，注意td一定要放在tr里，而单独tr也无法显示
                     $(".q-table").append("<tr>" + "<td>" + question + "</td>" + "</tr>");
                     //遍历有多少个选项
@@ -59,7 +61,7 @@ function search() {
                     $(".q-table").append("<br>")
                 }
             }
-            str = "共计搜到题目数："+ json.item.length;
+            str = "共计搜到题目数："+ q_num;
             $('.tip').text(str);
             // alert(json.item.length);
         }

@@ -10,17 +10,19 @@ function create() {
     var option = $('#option-textarea').val().split('、');
     for (var i = 0; i < option.length; i++) {
         option[i] = option[i].replace(/\r|\n|- | /ig, "");
-        if(i!=option.length-1){
+        if (i != option.length - 1) {
             option[i] = option[i].slice(0, -1);
         }
-        str_option = str_option + '\t"' + option[i] + '",\n';
+        if (i != 0) {
+            str_option = str_option + '\t"' + option[i] + '",\n';
+        }
     }
     // for(var i = 0; i  <option.length-1;i++){
     //     str_option = str_option + '\t"' + i + '",\n';
     // }
     console.log(option);
     //为了把末尾逗号删除
-    str_option = str_option.slice(0,-2);
+    str_option = str_option.slice(0, -2);
     str_option = str_option + "\n},\n";
     //答案读取
     var str_answer = '"answer": "' + $('#answer-text').val() + '"\n},';

@@ -1,0 +1,91 @@
+body {
+    /* background-image: url(../img/bg5.jpg); */
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    background-size: cover;
+    /* fixed对于磨砂玻璃很重要 */
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.main {
+    margin-top:20vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    background-color: rgba(228, 231, 233, 0.548);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    width: 200px;
+    border-top: 3px solid rgb(56, 140, 236);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+a{
+    font-size: 18px;
+}
+
+#question-text {
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid blue;
+    /* height: 20px; */
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#option-textarea{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#answer-text {
+    border-radius: 2px;
+    border: 1px solid blue;
+    height: 20px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+#json-my {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.question-information {
+    width: 50%;
+
+}
+
+.question-json {
+    width: 100%;
+}
+
+.footer p {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* 移动端样式 */
+@media screen and (max-width:768px) {
+    .question-information,.question-json {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer {
+        margin-top: -120px !important;
+    }
+}

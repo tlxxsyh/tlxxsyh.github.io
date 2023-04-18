@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/all.css">
-    <link rel="stylesheet" href="../../css/xxt.css">
+    <link rel="stylesheet" href="../../css/question.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
     <script src="../../js/jquery-3.6.2.min.js"></script>
     <title>欢迎来到言念的世界</title>
@@ -33,27 +33,33 @@
         </div>
     </nav>
     <!-- 主体部分 -->
-    <div class="search">
-        <input type="text" id="text-search" placeholder="仅支持题目检索，不支持选项检索">
-        <button id="btn-search" onclick="search()">搜索</button>
-        <button id="btn-question" onclick="gotoQuestion()">添加题目</button>
-    </div>
-    <!-- 横条操作区 -->
-    <div class="operator">
-        <!-- 题目数显示标签 -->
-        <p class="tip">共计搜到题目数：</p>
-        <!-- 操作区 -->
-        <div class="op">
-            题目类型：
-            <select id="subject">
-                <option value="../../json/economics.json">经济技术管理</option>
-                <option value="../../json/internet.json">物联网技术</option>
-            </select>
-        </div>
-    </div>
-    
     <div class="main">
-        <table class="q-table"></table>
+        <div class="question-information">
+            <h1>题目信息</h1>
+            <hr>
+            <a>题目类型：</a>
+            <select id="subject">
+                <option value="multiple-choice">单选题</option>
+                <option value="multiple-answer">多选题</option>
+            </select>
+            <br>
+            <a>题目内容：</a>
+            <textarea id="question-text" cols="30" rows="5" placeholder="请将题目粘贴在这"></textarea>
+            <br>
+            <a>选项内容：</a>
+            <textarea id="option-textarea" cols="30" rows="4" placeholder="请用逗号分隔不同选项内容"></textarea>
+            <br>
+            <a>正确答案：</a>
+            <input type="text" id="answer-text" placeholder="请用半角逗号分隔的数字表示">
+            <button id="btn-question" onclick="create()">生成</button>
+        </div>
+        <div class="question-json">
+            <h1>生成json</h1>
+            <hr>
+            <textarea id="json-my" cols="30" rows="10" readonly="true"></textarea>
+            <button id="btn-copy" onclick="copy()">一键复制</button>
+        </div>
+
     </div>
     <!-- 页尾 -->
     <div class="footer">
@@ -63,6 +69,5 @@
 
 </body>
 <script src="../../js/all.js" type="text/javascript"></script>
-<script src="../../js/xxt.js" type="text/javascript"></script>
-
+<script src="../../js/question.js"></script>
 </html>

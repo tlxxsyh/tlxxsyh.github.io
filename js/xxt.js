@@ -74,7 +74,7 @@ function search() {
 
 //访问新页面
 function gotoQuestion() {
-    window.open("https://tlxxssyh.github.io/html/study/question.html","_blank");
+    window.open("https://tlxxsyh.github.io/html/study/question.html","_blank");
 }
 
 //输出答案

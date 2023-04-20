@@ -1,6 +1,7 @@
 var str = "{\n";
 
 function create() {
+    str = "{\n"/;
     //读题目类型
     var str_type = '"type": "' + $('#subject').val() + '",\n';
     //读题目问题
@@ -35,4 +36,7 @@ function copy() {
     textarea.select();
     document.execCommand('Copy');
     textarea.val("复制成功！");
+    $('#question-text').val('');
+    $('#option-textarea').val('');
+    $('#answer-text').val('');
 }

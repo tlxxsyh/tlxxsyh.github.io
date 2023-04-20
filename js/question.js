@@ -23,7 +23,7 @@ function create() {
     console.log(option);
     //为了把末尾逗号删除
     str_option = str_option.slice(0, -2);
-    str_option = str_option + "\n},\n";
+    str_option = str_option + "\n],\n";
     //答案读取
     var str_answer = '"answer": "' + $('#answer-text').val() + '"\n},';
     str = str + str_type + str_question + str_option + str_answer;

@@ -53,7 +53,7 @@
                 "德国",
                 "日本"
             ],
-            "answer": "0"
+            "answer": "3"
         },
         {
             "type": "multiple-choice",
@@ -150,7 +150,7 @@
                 "感知控制层、数据处理层、应用决策层",
                 "感知控制层、数据传输层、应用决策层"
             ],
-            "answer": "4"
+            "answer": "1"
         },
         {
             "type": "multiple-answer",
@@ -161,7 +161,7 @@
                 "通信技术",
                 "定位技术"
             ],
-            "answer": "0"
+            "answer": "1,2,4"
         },
         {
             "type": "multiple-choice",
@@ -191,17 +191,6 @@
                 "×"
             ],
             "answer": "2"
-        },
-        {
-            "type": "multiple-choice",
-            "question": "QR码的寻象图形可以看作是由3个()重叠的同心的正方形组成。（5.0分）",
-            "option": [
-                "7*7个深色模块、3*3个浅模块和1*1个深色模块",
-                "7*7个深色模块、5*5个浅模块和3*3个深色模块",
-                "7*7个深色模块、5*5个浅模块和1*1个深色模块",
-                "5*5个深色模块、3*3个浅模块和1*1个深色模块"
-            ],
-            "answer": "1"
         },
         {
             "type": "multiple-choice",
@@ -363,7 +352,7 @@
                 "集线器主要工作在网络层。",
                 "路由器无法进行拥塞控制。"
             ],
-            "answer": "2"
+            "answer": "3"
         },
         {
             "type": "multiple-choice",
@@ -426,6 +415,241 @@
                 "√"
             ],
             "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "关于关系的性质下列描述错误的是",
+            "option": [
+                "关系中不允许出现相同的元组B",
+                "关系中元组的顺序不可任意调换C",
+                "不同的属性可以取自同一个域D",
+                "列同质"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "关系数据模型是目前最重要的一种数据模型，它的三个要素分别是 ()",
+            "option": [
+                ".实体完整性参照完整性用户自定义完整性B",
+                "数据结构关系操作完整性约束",
+                ".数据增加数据修改数据查询D",
+                "外模式模式内模式"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "IP地址 (80.201.17.200/23) 的网络号是 ()().()，子网号是 ().().()0主机号是 ().().().( )。",
+            "option": [
+                "第一空8",
+                "第2空",
+                "第3空",
+                "第4空",
+                "第5空",
+                "第6空20",
+                "第7空1",
+                "第8空",
+                "第9空",
+                "第10空",
+                "第11空",
+                "第12空200;"
+            ],
+            "answer": "0"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "对于IP地址20.255.255.255,属于(",
+            "option": [
+                "A.直接广播地",
+                "B.回送地",
+                "C.受限广播地",
+                "D.特定主机地址"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "路由器是实现()上网络的互连",
+            "option": [
+                "A.物理",
+                "B.数据链路",
+                "C.网络",
+                "D.传输层"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "在Internet网络中不存在的IP地址是(",
+            "option": [
+                "A.191.0.0.",
+                "B.192.168.0.",
+                "C.20.0.0.",
+                "D.170.0.0.0"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "在Ethernet网络中,最小帧长度为()字节",
+            "option": [
+                "A.6",
+                "B.5",
+                "C.1",
+                "D.0"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "100BASE-TX标准中,采用5类UTP中的()用于发送和接收",
+            "option": [
+                "A.1",
+                "B.2",
+                "C.3",
+                "D.4对"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "网络交换机的背板带宽指的是()",
+            "option": [
+                "A.电路板宽",
+                "B.电路板的厚",
+                "C.交换机的速",
+                "D.交换机的容量"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下面()地址属于MAC地址",
+            "option": [
+                "A.00-60-08-A",
+                "B.202.96.166.",
+                "C.00",
+                "D.00-60-08-00-A1-36"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "广播风暴产生的原因是()",
+            "option": [
+                "A.发送的帧",
+                "B.接收的帧",
+                "C.目的地址不存",
+                "D.源地址不存在"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "]链路指的是()",
+            "option": [
+                "A.逻辑上有源的通",
+                "B.物理上有源的通",
+                "C.逻辑上无源的通",
+                "D.物理上无源的通路"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "]滑动窗口技术是用于实现()",
+            "option": [
+                "A.面向连接的服",
+                "B.面向无连接服",
+                "C.差错控制和流量控",
+                "D.数据传输"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "屏蔽网的作用",
+            "option": [
+                "保存电缆导线传输信号能量,把电荷引入地下,防止信号对通信系统或其他对电子噪声比较敏感的电气设备的电磁干扰。防止信息被窃听"
+            ],
+            "answer": "0"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "电话传输网络属于()通信方式",
+            "option": [
+                "A.单",
+                "B.半双",
+                "C.全双",
+                "D.以上全是"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "通常计算机网络采用的数据交换技术是()",
+            "option": [
+                "A.线路交换技",
+                "B.报文交换技",
+                "C.分组交换技术"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "在Ethernet网络中,冲突窗口的大小是()us",
+            "option": [
+                "A.25.",
+                "B.51.",
+                "C.25",
+                "D.512"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "在Ethernet网络中最小帧长度为()字节",
+            "option": [
+                "A.6",
+                "B.5",
+                "C.1",
+                "D.0"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "]UTP线路一般包含()根双绞线",
+            "option": [
+                "A.",
+                "B.",
+                "C.",
+                "D.8"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "按照TIA568B的标准UTP线路中第二根双绞线是",
+            "option": [
+                "A.绿色",
+                "B.桔色",
+                "C.蓝色",
+                "D.棕色线"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "按照TIA568B的标准，UTP线路中第六根双绞线是( )",
+            "option": [
+                "A.绿色",
+                "B.桔色",
+                "C.蓝色",
+                "D.棕色线"
+            ],
+            "answer": "1"
         }
     ]
 }

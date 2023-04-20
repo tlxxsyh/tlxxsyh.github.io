@@ -1,8 +1,9 @@
 //页面加载完成时执行
 window.onload = function () {
     // allQuestion();
-    search()
+    search();
 }
+
 //搜索题目，如果输入空值就会返回所有题目
 function search() {
     var q_num = 0;
@@ -84,3 +85,9 @@ function gotoQuestion() {
 function printQuestion() {
 
 }
+
+$("input").keyup(function(event){
+    if(event.keyCode == 13){
+        search(); // 自己封装的方法
+    }
+});

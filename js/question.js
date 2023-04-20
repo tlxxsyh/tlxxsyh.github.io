@@ -1,5 +1,5 @@
 var str = "{\n";
-
+alert("页面已废弃！");
 function create() {
     str = "{\n";
     //读题目类型

@@ -53,7 +53,7 @@
                 "德国",
                 "日本"
             ],
-            "answer": "1"
+            "answer": "0"
         },
         {
             "type": "multiple-choice",
@@ -65,7 +65,367 @@
                 "信息化时代"
             ],
             "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "被称为“中国物联网之都”的城市为()",
+            "option": [
+                "北京",
+                "上海",
+                "无锡",
+                "杭州"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "物联网的核心价值是能够实现()",
+            "option": [
+                "信息的智慧化分析",
+                "信息的广泛感知",
+                "信息的安全传输",
+                "信息的可靠存储"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "EPC/UID系统模型主要是面向()提出的。",
+            "option": [
+                "RFID",
+                "红外技术",
+                "蓝牙",
+                "无线传感网"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下面哪个通信技术属于短距离无线通信技术。",
+            "option": [
+                "ZigBee",
+                "5G通信技术",
+                "蜂窝通信技术",
+                "卫星通信技术"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "物联网的英文名称为()",
+            "option": [
+                "RFID(RadioFrequencyIdentification)",
+                "InternetofThings",
+                "CPS(CyberPhysicalSystem)",
+                "WSN(WirelessSensorNetwork)"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "3C技术指的是()。",
+            "option": [
+                "通信技术、数字技术、计算机技术",
+                "数字技术、计算机技术、控制技术",
+                "通信技术、计算机技术、控制技术",
+                "信息技术、通信技术、控制技术"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "物联网感知层的关键技术就是传感器技术。",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "物联网三层体系架构中,有底向上的顺序为()。",
+            "option": [
+                "数据传输层、感知控制层、应用决策层",
+                "应用决策层、数据传输层、感知控制层",
+                "感知控制层、数据处理层、应用决策层",
+                "感知控制层、数据传输层、应用决策层"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-answer",
+            "question": "物联网感知技术主要包括()",
+            "option": [
+                "标识技术",
+                "传感器技术",
+                "通信技术",
+                "定位技术"
+            ],
+            "answer": "0"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "物联网在智能交通中的应用就是ETC(不停车收费系统)。（5.0分）",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "EPC体系架构的核心器件是()（5.0分）",
+            "option": [
+                "传感器",
+                "存储设备",
+                "传输设备",
+                "标识设备"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "一维条形码中对光线反射率较高的部分为条（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "QR码的寻象图形可以看作是由3个()重叠的同心的正方形组成。（5.0分）",
+            "option": [
+                "7*7个深色模块、3*3个浅模块和1*1个深色模块",
+                "7*7个深色模块、5*5个浅模块和3*3个深色模块",
+                "7*7个深色模块、5*5个浅模块和1*1个深色模块",
+                "5*5个深色模块、3*3个浅模块和1*1个深色模块"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "RFID在数据读写过程中需在识别系统与特定目标之间建立机械或光学接触。（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下列哪种基站定位是基于到达时间差原理的（5.0分）",
+            "option": [
+                "COO定位",
+                "TDOA定位",
+                "TOA定位",
+                "AOA(基于相位)定位"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "无线传感器网络具有可快速部署、可自组织、隐蔽性强和高容错性的特点。（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "传感器中能直接感受或响应被测量(输入量)的部分是()?（5.0分）",
+            "option": [
+                "模拟电路",
+                "数字电路",
+                "敏感元件",
+                "转换元件"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "无线传感网络是一个以数据为中心的网络。（5.0分）",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "北斗导航系统是我国自主研发的先进全球定位技术。（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "目前智能手机中的指纹传感器主要是()。（5.0分）",
+            "option": [
+                "霍尔传感器",
+                "电阻传感器",
+                "电容传感器",
+                "电压传感器"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "3C技术指的是()。（5.0分）",
+            "option": [
+                "通信技术、数字技术、计算机技术",
+                "数字技术、计算机技术、控制技术",
+                "信息技术、通信技术、控制技术",
+                "通信技术、计算机技术、控制技术"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "QR码的寻象图形可以看作是由3个()重叠的同心的正方形组成。（5.0分）",
+            "option": [
+                "7*7个深色模块、3*3个浅模块和1*1个深色模块",
+                "7*7个深色模块、5*5个浅模块和3*3个深色模块",
+                "7*7个深色模块、5*5个浅模块和1*1个深色模块",
+                "5*5个深色模块、3*3个浅模块和1*1个深色模块"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "北斗导航系统是我国自主研发的先进全球定位技术。（5.0分）",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下面哪个技术属于物联网感知层的关键技术。（5.0分）",
+            "option": [
+                "感知与标识技术",
+                "通信技术",
+                "数据处理技术",
+                "数据存储技术"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "能耗的开销问题是WSN的关键技术之一。（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下列不属于无线通信技术的是()?（5.0分）",
+            "option": [
+                "卫星通信",
+                "微波通信",
+                "蓝牙",
+                "以太网"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "以下哪个那种设备常常使用蓝牙技术?（5.0分）",
+            "option": [
+                "移动硬盘",
+                "导航仪",
+                "耳机",
+                "路由器"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "蓝牙系统采用了一种灵活的无基站的组网方式（5.0分）",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下列关于集线器、交互机、路由器的说法哪个是正确的?（5.0分）",
+            "option": [
+                "路由器可以跨越多个不同类型的网络。",
+                "交换机所有端口均共享带宽。",
+                "集线器主要工作在网络层。",
+                "路由器无法进行拥塞控制。"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "wifi局域网的802.11n协议传输速率理论上是()（5.0分）",
+            "option": [
+                "300Mbps",
+                "11Mbps",
+                "600Mbps",
+                "54Mbps"
+            ],
+            "answer": "3"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "蜂窝移动通信实现了频率复用。（5.0分）",
+            "option": [
+                "√",
+                "×"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "第四代移动通信也就是4G的传输速度可达到()（5.0分）",
+            "option": [
+                "1000Mbps",
+                "50Mbps",
+                "100Mbps",
+                "10Mbps"
+            ],
+            "answer": "1"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "下列关于集线器、交互机、路由器的说法哪个是正确的?（5.0分）",
+            "option": [
+                "集线器主要工作在网络层。",
+                "交换机所有端口均共享带宽。",
+                "路由器无法进行拥塞控制。",
+                "路由器可以跨越多个不同类型的网络。"
+            ],
+            "answer": "4"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "网络层最重要的协议是()（5.0分）",
+            "option": [
+                "UDP",
+                "IP",
+                "TCP",
+                "HTTP"
+            ],
+            "answer": "2"
+        },
+        {
+            "type": "multiple-choice",
+            "question": "动态路由是指当前网络路径如果发生了故障,它可以自动转换到其他的路径（5.0分）",
+            "option": [
+                "×",
+                "√"
+            ],
+            "answer": "2"
         }
-
     ]
 }

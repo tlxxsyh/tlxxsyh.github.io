@@ -48,7 +48,10 @@ function search() {
                     //输出答案
                     //单选或者多选时
                     var ans = "";//每次开始前答案字符串要置空
-                    if (type == "multiple-answer" || type == "multiple-choice") {
+                    if (answer=='0'){
+                        ans = '不知道正确答案是什么';
+                    } 
+                    else if (type == "multiple-answer" || type == "multiple-choice") {
                         //遍历答案中的数字，每隔一个数字转一次字符再拼接，最后去掉最前面的顿号
                         for (var k = 0; k < answer.length; k = k + 2) {
                             num = answer[k];

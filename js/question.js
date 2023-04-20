@@ -1,7 +1,7 @@
 var str = "{\n";
 
 function create() {
-    str = "{\n"/;
+    str = "{\n";
     //读题目类型
     var str_type = '"type": "' + $('#subject').val() + '",\n';
     //读题目问题

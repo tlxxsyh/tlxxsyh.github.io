@@ -1,0 +1,45 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/htal;charest=utf-8">
+    <title>软件2001尚宇航19</title>
+    <style stype="text/css">
+        <!--
+        body {
+            font-family: 楷体;
+            font-size: 20px;
+        }
+
+        form {
+            margin: 20px 10px;
+            padding: 15px 25px 25px 20px;
+            border: 1px solid #EEE8E1;
+        }
+
+        .inputtext {
+            width: 150px;
+            height: 15px;
+        }
+        -->
+    </style>
+</head>
+
+<body>
+    <h3 align="center">缴费凭证上传</h3>
+    <form name="forml" enctype="multipart/form-data" action="program.asp" method="post">
+        <br>&nbsp;&nbsp;姓名:&nbsp;&nbsp;<input name="xm" type="text" class="inputtext" />
+        <br>&nbsp;&nbsp;汇出行:&nbsp;<input name="hch" type="text" class="inputtext" />
+        <br>&nbsp;&nbsp;汇出日期:<input name="hcrp" type="text" class="inputtext" />
+        <br>&nbsp;&nbsp;图片文件:<input name="tp" type="file" class="inputtext" />
+        <br>&nbsp;&nbsp;说明:&nbsp;&nbsp;<textarea name="sm" rows="10"></textarea><br>
+        <center><input name="submit" type="submit" value="提交" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="reset" type="reset" value="重置">
+        </center>
+    </form>
+</body>
+
+</html>

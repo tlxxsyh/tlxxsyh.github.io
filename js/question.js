@@ -1,3 +1,4 @@
+//这个页面是自创json的
 var str = "{\n";
 alert("页面已废弃！");
 function create() {

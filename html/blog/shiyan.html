@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>圆弧转动动画</title>
-  </head>
-  <style>
-    
-  </style>
+<html lang="zh-cn">
 
-  <body>
-    <div class="color" style="width:100vw; height:100vh; background-color: #C7BDF6;"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../../js/jquery-3.6.2.min.js"></script>
+  <title>AI or not</title>
+</head>
+
+<style>
+  body {
+    background-image: url('https://p1.itc.cn/images01/20200612/7f54780d87e34898a80ac77692c31a29.jpeg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    position: relative;
+    color: red;
+    margin-top: 30vh;
+    margin-left: 40vw;
+    font-size: 200px;
+  }
+</style>
+
+<body>
+  <div id="btn">
+    <input type="button" value="答案" onclick="ans()" id="btn1">
+    <input type="button" value="下一个" onclick="next()" id="btn2">
+    <h1></h1>
+  </div>
+
+</body>
+<script>
+  var URL = "../../../../../aicosplay/";
+  var str1 = "ai_";
+  var str2 = "true_";
+
+
+  // 答案函数
+  function ans() {
+    if ($('h1').text() != "") {
+      $('h1').text('');
+    }
+    else {
+      var bk = $('body').css('background-image');
+      var src = bk.split('(')[1].split(')')[0];
+      src = src.split('/');
+      src = src[5].split('_');
+      src = src[0];
+      if (src == 'ai') {
+        $("h1").css("color", "red");
+        $('h1').text("假的");
+      }
+      else {
+        $("h1").css("color", "green");
+        $('h1').text("真人");
+      }
+    }
+
+  }
+  //下一张
+  function next() {
+    $('h1').text("");
+    var url = "";
+    var type = Math.round(Math.random());
+    if (type == 1) {
+      url = URL + str1;
+    }
+    else {
+      url = URL + str2;
+    }
+    //生成[1,11]随机整数
+    var num = Math.floor(Math.random() * 11) + 1;
+    url = url + num + ".jpg";
+    $("body").css("background-image", "url('" + url + "')");
+    // alert(url);
+  }
+
+</script>
+
 </html>

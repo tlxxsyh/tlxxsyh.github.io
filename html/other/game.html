@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" href="../../css/game.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <script src="../../js/jquery-3.6.2.min.js"></script>
+    <title>言念の游戏评价</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <!-- 左侧logo -->
+        <div class="logo">言念の世界</div>
+        <!-- 导航栏主体 -->
+        <ul class="nav-menu">
+            <li href="#" onclick="index()">首页</li>
+            <li href="#" onclick="study()">学习</li>
+            <li href="#" onclick="expeiment()">实验</li>
+            <li href="#" onclick="about()">其他</li>
+            <li href="#" onclick="feedback()">反馈</li>
+            <div class="slider"></div>
+        </ul>
+        <!-- 三个横线 -->
+        <div class="burger">
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="bottom-line"></div>
+        </div>
+    </nav>
+    <!-- 主体部分 -->
+    <div class="main-page">
+        <div id="game-search">
+            <label for="game-text">游戏名：</label>
+            <input type="text" id="game-text" placeholder="游戏名，中英文均可">
+            <label for="game-select">游戏类型：</label>
+            <select id="game-select">
+                <option value="">无限制</option>
+                <option value="解谜">解谜游戏</option>
+                <option value="联机">联机游戏</option>
+                <option value="单人">单人游戏</option>
+                <option value="网游">网游类型</option>
+                <option value="休闲">休闲游戏</option>
+                <option value="文字游戏">文字游戏</option>
+                <option value="竞速">竞速游戏</option>
+            </select>
+            <button id="btn-search" onclick="search()">搜索</button>
+            <a id="game-num"></a>
+        </div>
+        <div id="big-gamebox">
+           
+        </div>
+    </div>
+
+</body>
+
+<script src="../../js/all.js" type="text/javascript"></script>
+<script src="../../js/game.js" type="text/javascript"></script>
+</html>

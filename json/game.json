@@ -204,6 +204,13 @@
             "description":"考验物流管理能力的游戏，很好玩很好玩，就是废肝罢了，以后会出多人联机模式，目前连云存档都没有"
         },
         {
+            "name":"内心的过去（the past within）",
+            "type":"联机",
+            "pic":"../../img/game/nxdgq.png",
+            "score":"☆☆☆☆☆",
+            "description":"还没玩"
+        },
+        {
             "name":"pico park",
             "type":"联机、闯关、解谜",
             "pic":"../../img/game/pp.png",
@@ -289,6 +296,13 @@
         },
         {
             "name":"森林之子（sons of forest）",
+            "type":"联机",
+            "pic":"../../img/game/100.png",
+            "score":"☆☆☆",
+            "description":"没玩过但是感兴趣"
+        },
+        {
+            "name":"滴答滴答",
             "type":"联机",
             "pic":"../../img/game/100.png",
             "score":"☆☆☆",

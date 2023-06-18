@@ -13,7 +13,10 @@
         $(function () {
             //第一页希望直接展现文字
             $('#comment1').animate({
-                opacity: "1"
+                //这里的动作并不是相对于原动作，而是就做一个这样的动作（默认从0）
+                //因此不用设置页面初始位置在页面外，会导致页面元素溢出页面
+                opacity: "1",
+                // left: "60vw"
             }, 800)
             $(document).scroll(function () {
                 var y_position = $(this).scrollTop();
@@ -21,12 +24,15 @@
                 //也就是第二页展现一半的时候，希望出现文字，那么第三页也就是滑过1.5页时
                 if (y_position > 0.5 * window.screen.height) {
                     $('#comment2').animate({
-                        opacity: "1"
+                        opacity: "1",
+                        // left: "5vw"
                     }, 800)
                 }
                 if (y_position > 1.5 * window.screen.height) {
-                    $('#comment3').animate({
-                        opacity: "1"
+                    $('#comment3')
+                    .animate({
+                        opacity: "1",
+                        // left: "60vw"
                     }, 800)
                 }
                 //console.log(y_position);

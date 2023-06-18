@@ -3,9 +3,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    /* overflow-x: hidden; */
 }
 #first-page {
     height: 100vh;
+
 }
 #second-page{
     width: 100vw;
@@ -22,6 +24,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    overflow: hidden;
 }
 #first-page .comment{
     margin-top: 30vh;
@@ -52,6 +55,9 @@ p{
     margin-top: 10px;
     text-shadow: #000 4px 4px 5px;
 }
-#comment1,#comment2,#comment3{
+#comment1,#comment3{
+    opacity: 0;
+}
+#comment2{
     opacity: 0;
 }

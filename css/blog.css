@@ -10,3 +10,24 @@ body {
     align-items: center;
     justify-content: center;
 }
+.footer{
+    margin-top: 0;
+    background-color: white;
+    padding-top: 30px;
+}
+#second-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#third-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}

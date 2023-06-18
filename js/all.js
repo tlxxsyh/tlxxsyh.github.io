@@ -23,8 +23,8 @@ function index() {
 function study() {
     window.location = "https://tlxxsyh.github.io/html/study/study_index.html";
 }
-function expeiment() {
-    window.location = "https://tlxxsyh.github.io/html/web/web_index.html";
+function blog() {
+    window.location = "https://tlxxsyh.github.io/html/blog/blog.html";
 }
 function about() {
     window.location = "https://tlxxsyh.github.io/html/other/other_index.html";

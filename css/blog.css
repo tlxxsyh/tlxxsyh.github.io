@@ -1,0 +1,12 @@
+body {
+    background-image: url(../img/bg_12.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#first-page {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

@@ -13,6 +13,6 @@ function feedback(){
         alert("性别你还没选呢!");
     }
     else{
-        alert("欢迎你，你的标题是："+title.value);
+        alert("欢迎你，你的标题是：" + title.value);
     }
 }

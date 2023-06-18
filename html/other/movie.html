@@ -11,18 +11,20 @@
     <title>欢迎来到言念的世界</title>
     <script>
         $(function () {
+            //第一页希望直接展现文字
             $('#comment1').animate({
-            opacity: "1"
-        }, 800)
+                opacity: "1"
+            }, 800)
             $(document).scroll(function () {
-                var html = document.body.scrollHeight / 4;
                 var y_position = $(this).scrollTop();
-                if (y_position > html) {
+                //因为每个页面都正好是一整个屏幕高度，所以滑过0.5页，
+                //也就是第二页展现一半的时候，希望出现文字，那么第三页也就是滑过1.5页时
+                if (y_position > 0.5 * window.screen.height) {
                     $('#comment2').animate({
                         opacity: "1"
                     }, 800)
                 }
-                if (y_position >  2.5*html) {
+                if (y_position > 1.5 * window.screen.height) {
                     $('#comment3').animate({
                         opacity: "1"
                     }, 800)

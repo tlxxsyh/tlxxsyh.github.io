@@ -1,0 +1,38 @@
+<!-- 程序上机练习11-2.html-->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <title>软件2001尚宇航19</title>
+    <script type="text/javascript" language="javascript">
+        function equal(e) {
+            data1 = form1.data1.value;
+            data2 = form1.data2.value;
+            switch (e) {
+                case "+": total = data1 * 1 + data2 * 1; break;
+                case "-": total = data1 - data2; break;
+                case "*": total = data1 * data2; break;
+                case "/": total = data1 / data2; break;
+            }
+            form1.total.value = total;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        <p>数据1: <input type="text" size=5 name="data1"> </p>
+        <p>数据2: <input type="text" size=5 name="data2"> </p>
+        <p>
+            <input type="button" value="加" onclick="equal('+')">
+            <input type="button" value="减" onclick="equal('-')">
+            <input type="button" value="乘" onclick="equal('*')">
+            <input type="button" value="除" onclick="equal('/')">
+        </p>
+        <p> 运算结果: <input type="text" name="total" size=5> </p>
+    </form>
+</body>
+
+</html>

@@ -1,115 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>软件2001尚宇航19</title>
-    <style type="text/css">
-        #aaa 
-        {
-            color:Red;
+    <script type="text/javascript">
+        function start(x) {
+            var num = document.getElementById("num").value;
+            var numA = document.getElementById("numA").value;
+            var numB = document.getElementById("numB").value;
+            var num2;
+            var numC;
+            switch (x) {
+                case 1: num2 = Math.round(num); break;
+                case 2: num2 = Math.ceil(num); break;
+                case 3: num2 = Math.floor(num); break;
+                case 4: num2 = Math.sqrt(num); break;
+                case 5: num2 = Math.abs(num); break;
+                case 6: num2 = Math.log(num); break;
+                case 7: num2 = Math.sin(num); break;
+                case 8: num2 = Math.cos(num); break;
+                case 9: numC = Math.min(numA, numB); break;
+                case 10: numC = Math.max(numA, numB); break;
+                    defaut: alert("没有操作");
+            }
+            if (num2 !== undefined) {
+                document.getElementById("num2").value = num2;
+            }
+            if (numC !== undefined) {
+                document.getElementById("numC").value = numC;
+            }
         }
-    </style>
+
+    </script>
 </head>
+
 <body>
-    <h3 align="center">
-        用户注册</h3>
-    <form name="userregister" action="program.asp" method="post">
-    <table border="1" align="center" cellpadding="3" cellspacing="0" bordercolor="#999999"
-        style="border-collapse: collapse">
-        <tr>
-            <td width="616" colspan="2" align="left">
-                注:标<span class="STYLE1">*</span>的为必填项
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                用&nbsp;户&nbsp;名
-            </td>
-            <td width="446" align="left">
-                <input name="yhm" type="text" onkeyup="appendemail()" />
-                <span class="STYLE1" id="aaa">*&nbsp;请使用常用的电子邮箱作为用户名</span>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                密&nbsp;&nbsp;&nbsp;&nbsp;码
-            </td>
-            <td align="left">
-                <input name="mm" type="password" />
-                <span class="STYLE1">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                工作岗位：
-            </td>
-            <td align="left">
-                <input name="gzdw" type="text" class="inputtext" />
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                职务名称：
-            </td>
-            <td align="left">
-                <select name="zc" size="1">
-                    <option value="0">助教</option>
-                    <option value="1">讲师</option>
-                    <option value="2">副教授</option>
-                    <option value="3">教授</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                国&nbsp;&nbsp;&nbsp;&nbsp;家
-            </td>
-            <td align="left">
-                <input name="gj" type="text" class="inputtext" />
-                <span class="STLE1">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                姓&nbsp;&nbsp;&nbsp;&nbsp;名
-            </td>
-            <td align="left">
-                <input name="xm" type="text" class="inputtext" />
-                <span class="STLE1">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                性&nbsp;&nbsp;&nbsp;&nbsp;别
-            </td>
-            <td align="left">
-                &nbsp;男<input name="xb" type="radio" value="0" checked />&nbsp;&nbsp;&nbsp;&nbsp;
-                女<input name="xb" type="radio" value="1" />
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                电子邮件：
-            </td>
-            <td align="left">
-                <input name="email" type="text" class="inputtext" />
-                <span class="STLE1">*</span>
-            </td>
-        </tr>
-        <tr>
-            <td width="170" align="right">
-                电&nbsp;&nbsp;&nbsp;&nbsp;话
-            </td>
-            <td align="left">
-                <input name="tel" type="text" class="inputtext" />
-            </td>
-        </tr>
-    </table>
-    <center>
-        <input name="submit" type="submit" value="提交" />
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <input name="reset" type="reset" value="重置" />
-    </center>
-    </form>
+    原始数据输入<input type="text" id="num" value="" size="22" /><br />
+    <button onclick="start(1);">取整（四舍五入）</button>
+    <button onclick="start(2);">取整（大于）</button>
+    <button onclick="start(3);">取整（小于）</button><br />
+    <button onclick="start(4);">平方根</button>
+    <button onclick="start(5);">绝对值</button>
+    <button onclick="start(6);">自然对数</button>
+    <button onclick="start(7);">正弦值</button>
+    <button onclick="start(8);">余弦值</button><br />
+    运行结果<input type="text" id="num2" value="" disabled="disabled" size="27" />
+    <hr />
+    原始数据输入<input type="text" id="numA" value="" size="12" />&nbsp;
+    <input type="text" id="numB" value="" size="12" /><br />
+    <button onclick="start(9);">求较小值</button>
+    <button onclick="start(10);">求较大值</button><br />
+    运算结果<input type="text" id="numC" value="" disabled="disabled" size="27" /><br />
+
+
+
 </body>
+
 </html>

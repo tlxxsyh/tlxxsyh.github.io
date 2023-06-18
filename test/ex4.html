@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>软件2001尚宇航19</title>
+    <script language="javascript" type="text/javascript">
+        n = Math.floor(Math.random() * 100);
+        // alert(n);
+        function numGame() {
+            
+            num = form1.num.value;
+            // alert(num);
+            str = "";
+            s = "你输入的数字";
+            if (num < 0 || num > 99) {
+                str = s + "超过了0~99的范围";
+            }
+            else {
+                if (num > n) str = s + "太大了";
+                if (num < n) str = s + "太小了";
+                if (num == n) {
+                    str = "恭喜你猜对了！";
+                    alert(str);
+                }
+            }
+            form1.info.value = str;
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" action="">
+    请输入一个(0~99)之前的整数;
+    <input type="text" name="num" size="3"/>
+    <input type="button" value="我猜" onclick="numGame()"/>
+    <br/>
+    信息:<input type="text" name="info" size="40"/>
+    </form>
+</body>
+</html>

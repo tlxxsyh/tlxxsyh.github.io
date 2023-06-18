@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100vw;
+    height: 100vh;
+}
+
+#title {
+    height: 8vh;
+    background-color: rgb(139,130,75);
+    font-family: '汉仪昌黎宋刻本(精修版)','楷体';
+    font-size: 30px;
+}
+
+#nav {
+    background-color: rgb(204,191,112);
+    width: 100px;
+    vertical-align: top;
+    font-family: '汉仪昌黎宋刻本(精修版)','楷体';
+    
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#main {
+    background-color: rgb(250,235,212);
+    height: 78vh;
+    width: 400px;
+    /* vertical-align: top; */
+    
+}
+#mycontent{
+    font-family: '汉仪昌黎宋刻本(精修版)','楷体';
+    font-size: 30px;
+}
+
+
+#footer {
+    height: 8vh;
+    text-align:center;
+    background-color: rgb(139,130,75);
+}

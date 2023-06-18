@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg5.jpg);
+    background-image: url(../img/bg11.jpg);
     background-size: cover;
     /* fixed对于磨砂玻璃很重要 */
     background-attachment: fixed;
@@ -12,9 +12,9 @@ body {
     justify-content: center;
 }
 #first-page h1{
-    font-size: 70px;
+    font-size: 40px;
     color: white;
-    -webkit-text-stroke: 2px black;
+    /* -webkit-text-stroke: 2px black; */
 }
 #main-page hr {
     margin-bottom: 30px;

@@ -3,10 +3,11 @@
 <head>
     <title>软件2001尚宇航19</title>
     <script language="javascript" type="text/javascript">
+        var cnt =0;
         n = Math.floor(Math.random() * 100);
         // alert(n);
         function numGame() {
-            
+            cnt++;
             num = form1.num.value;
             // alert(num);
             str = "";
@@ -15,10 +16,10 @@
                 str = s + "超过了0~99的范围";
             }
             else {
-                if (num > n) str = s + "太大了";
-                if (num < n) str = s + "太小了";
+                if (num > n) str = s + "太大了，你猜了"+ cnt + "次！";
+                if (num < n) str = s + "太小了，你猜了"+ cnt + "次！";
                 if (num == n) {
-                    str = "恭喜你猜对了！";
+                    str = "恭喜你猜对了！，你猜了"+ cnt + "次！";
                     alert(str);
                 }
             }

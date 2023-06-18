@@ -36,9 +36,14 @@ p{
 svg{
     width: 80px;
     height: 80px;
-    border: 1px solid black;
+    border: 3px solid rgb(135, 135, 135);
     border-radius: 15px;
     padding: 8px;
+    background-color: rgb(255, 255, 255);
+}
+svg:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
 }
 form{
     margin-top: 10px;

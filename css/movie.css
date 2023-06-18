@@ -1,0 +1,54 @@
+body {
+    background-image: url(../img/movie1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#first-page {
+    height: 100vh;
+}
+#second-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg10.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#third-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/movie2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#first-page .comment{
+    margin-top: 30vh;
+    margin-left: 60vw;
+    color:white;
+    position: absolute;
+    width: 30vw;
+}
+#second-page .comment{
+    margin-top: 40vh;
+    margin-left: 5vw;
+    color:white;
+    position: absolute;
+    width: 30vw;
+}
+#third-page .comment{
+    margin-top: 50vh;
+    margin-left: 60vw;
+    color:white;
+    position: absolute;
+    width: 30vw;
+}
+h1{
+    text-shadow: #000 4px 4px 5px;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: #000 4px 4px 5px;
+}

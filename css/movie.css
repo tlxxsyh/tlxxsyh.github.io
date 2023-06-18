@@ -52,3 +52,6 @@ p{
     margin-top: 10px;
     text-shadow: #000 4px 4px 5px;
 }
+#comment1,#comment2,#comment3{
+    opacity: 0;
+}

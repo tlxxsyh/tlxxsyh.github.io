@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="../../css/all.css">
     <link rel="stylesheet" href="../../css/movie.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+    <script src="../../js/jquery-3.6.2.min.js"></script>
     <title>欢迎来到言念的世界</title>
+    <script>
+        $(function () {
+            $('#comment1').animate({
+            opacity: "1"
+        }, 800)
+            $(document).scroll(function () {
+                var html = document.body.scrollHeight / 4;
+                var y_position = $(this).scrollTop();
+                if (y_position > html) {
+                    $('#comment2').animate({
+                        opacity: "1"
+                    }, 800)
+                }
+                if (y_position >  2.5*html) {
+                    $('#comment3').animate({
+                        opacity: "1"
+                    }, 800)
+                }
+                //console.log(y_position);
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -33,7 +56,7 @@
     </nav>
     <!-- 主体部分 -->
     <div id="first-page">
-        <div class="comment">
+        <div class="comment" id="comment1">
             <h1>肖申克的救赎</h1>
             <p>《肖申克的救赎》是由弗兰克·德拉邦特编剧并执导的美国剧情片，由蒂姆·罗宾斯、摩根·弗里曼领衔主演。</p>
             <p>该片根据斯蒂芬·埃德温·金1982年的中篇小说《肖申克的救赎》改编，主要讲述了银行家安迪因被误判为枪杀妻子及其情人的罪名入狱后，他不动声色、步步为营地谋划自我拯救并最终成功越狱，重获自由的故事。</p>
@@ -41,17 +64,20 @@
         </div>
     </div>
     <div id="second-page">
-        <div class="comment">
+        <div class="comment" id="comment2">
             <h1>哆啦A梦</h1>
             <p>《哆啦A梦》（日语：ドラえもん；英语：Doraemon；旧译叮当 / 小叮当）是日本漫画家藤本弘（笔名藤子·F·不二雄）创作的漫画。</p>
-            <p>漫画叙述了一只来自22世纪的猫型机器人——哆啦A梦，受主人野比世修的托付，回到20世纪，借助从四维口袋里拿出来的各种未来道具，来帮助世修的高祖父——小学生野比大雄化解身边的种种困难问题，以及生活中和妈妈野比玉子、身边的小伙伴静香、胖虎、小夫发生的轻松幽默搞笑感人的故事。</p>
+            <p>漫画叙述了一只来自22世纪的猫型机器人——哆啦A梦，受主人野比世修的托付，回到20世纪，借助从四维口袋里拿出来的各种未来道具，来帮助世修的高祖父——小学生野比大雄化解身边的种种困难问题，以及生活中和妈妈野比玉子、身边的小伙伴静香、胖虎、小夫发生的轻松幽默搞笑感人的故事。
+            </p>
         </div>
 
     </div>
     <div id="third-page">
-        <div class="comment">
+        <div class="comment" id="comment3">
             <h1>哈利波特</h1>
-            <p>《哈利·波特》（Harry Potter）是英国作家J.K.罗琳（J. K. Rowling）于1997～2007年所著的魔幻文学系列小说，共7部。其中前六部以霍格沃茨魔法学校（Hogwarts School of Witchcraft and Wizardry）为主要舞台，描写的是主人公——年轻的巫师学生哈利·波特在霍格沃茨前后六年的学习生活和冒险故事；第七本描写的是哈利·波特在第二次魔法界大战中在外寻找魂器并消灭伏地魔的故事。</p>
+            <p>《哈利·波特》（Harry Potter）是英国作家J.K.罗琳（J. K. Rowling）于1997～2007年所著的魔幻文学系列小说，共7部。其中前六部以霍格沃茨魔法学校（Hogwarts School
+                of Witchcraft and
+                Wizardry）为主要舞台，描写的是主人公——年轻的巫师学生哈利·波特在霍格沃茨前后六年的学习生活和冒险故事；第七本描写的是哈利·波特在第二次魔法界大战中在外寻找魂器并消灭伏地魔的故事。</p>
         </div>
     </div>
 </body>

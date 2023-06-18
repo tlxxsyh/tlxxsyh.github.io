@@ -1,86 +1,148 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-
+<html lang="en">
+ 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="../../js/jquery-3.6.2.min.js"></script>
-  <title>AI or not</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --device-width: 770px;
+      --device-height: 1336px;
+      --ui-width: 640px;
+      font-size: 15px;
+    }
+ 
+    body {
+      background-color: #000;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Helvetica;
+      padding: 4rem 0;
+    }
+ 
+    h2 {
+      color: #6e6e73;
+      text-align: center;
+      font-size: 4.5rem;
+      font-weight: 600;
+      margin: 6rem 0;
+    }
+ 
+    h2 p {
+      margin: 0;
+      color: #fff;
+    }
+ 
+    #iphone {
+      position: relative;
+      width: var(--device-width);
+      height: var(--device-height);
+    }
+ 
+    #hardware {
+      width: 100%;
+      height: 100%;
+      background-image: url(https://assets.codepen.io/2002878/iphone12-5g_on_phone.jpg);
+      background-size: var(--device-width) var(--device-height);
+    }
+ 
+    #ui {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+ 
+    #ui .top-ui {
+      display: block;
+      width: var(--ui-width);
+      height: auto;
+      margin: 70px auto 0;
+    }
+ 
+    #ui ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    #ui ul li img {
+      display: block;
+      width: var(--ui-width);
+      margin: 10px auto;
+      transform: scale(calc(1.8 - (0.8 * var(--progress)))) translateY(calc(-60px * (1 - var(--progress))));
+      opacity: var(--progress);
+    }
+  </style>
 </head>
-
-<style>
-  body {
-    background-image: url('https://p1.itc.cn/images01/20200612/7f54780d87e34898a80ac77692c31a29.jpeg');
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  h1 {
-    position: relative;
-    color: red;
-    margin-top: 30vh;
-    margin-left: 40vw;
-    font-size: 200px;
-  }
-</style>
-
+ 
 <body>
-  <div id="btn">
-    <input type="button" value="答案" onclick="ans()" id="btn1">
-    <input type="button" value="下一个" onclick="next()" id="btn2">
-    <h1></h1>
+  <h2>
+    Superfast wireless
+    <p>Hello 5G.</p>
+  </h2>
+  <div id="iphone">
+    <div id="hardware"></div>
+    <div id="ui">
+      <img src="https://assets.codepen.io/2002878/iphone12-5g_top_ui.jpg" class="top-ui" alt="">
+ 
+      <ul>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_01.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_02.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_03.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_04.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_05.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_06.jpg" />
+        </li>
+        <li>
+          <img src="https://assets.codepen.io/2002878/iphone12-5g_show_07.jpg" />
+        </li>
+      </ul>
+    </div>
   </div>
-
+ 
+  <script>
+    const rows = document.querySelectorAll('#ui ul li')
+    const html = document.documentElement
+ 
+    document.addEventListener("scroll", (e) => {
+      let scrolled = html.scrollTop / (html.scrollHeight - html.clientHeight)
+ 
+      let total = 1 / rows.length
+ 
+      for (let [index, row] of rows.entries()) {
+        let start = total * index
+        let end = total * (index + 1)
+ 
+        let progress = (scrolled - start) / (end - start)
+        if (progress >= 1) {
+          progress = 1
+        }
+        if (progress <= 0) {
+          progress = 0
+        }
+ 
+        row.style.setProperty('--progress', progress)
+      }
+    })
+  </script>
 </body>
-<script>
-  var URL = "../../../../../aicosplay/";
-  var str1 = "ai_";
-  var str2 = "true_";
-
-
-  // 答案函数
-  function ans() {
-    if ($('h1').text() != "") {
-      $('h1').text('');
-    }
-    else {
-      var bk = $('body').css('background-image');
-      var src = bk.split('(')[1].split(')')[0];
-      src = src.split('/');
-      src = src[5].split('_');
-      src = src[0];
-      if (src == 'ai') {
-        $("h1").css("color", "red");
-        $('h1').text("假的");
-      }
-      else {
-        $("h1").css("color", "green");
-        $('h1').text("真人");
-      }
-    }
-
-  }
-  //下一张
-  function next() {
-    $('h1').text("");
-    var url = "";
-    var type = Math.round(Math.random());
-    if (type == 1) {
-      url = URL + str1;
-    }
-    else {
-      url = URL + str2;
-    }
-    //生成[1,11]随机整数
-    var num = Math.floor(Math.random() * 11) + 1;
-    url = url + num + ".jpg";
-    $("body").css("background-image", "url('" + url + "')");
-    // alert(url);
-  }
-
-</script>
-
+ 
 </html>

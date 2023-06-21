@@ -1,5 +1,15 @@
+:root{
+    /* 打字机字体大小 */
+    --size:20px;
+    /* 打字机颜色 */
+    --color:rgb(6, 90, 6);
+    /* 打字机字数 */
+    --words:13em;
+    --words-num:13;
+}
+
 body {
-    background-image: url(../img/bg10.jpeg);
+    background-image: url(../img/bg9.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -10,24 +20,116 @@ body {
     align-items: center;
     justify-content: center;
 }
-.footer{
-    margin-top: 0;
-    background-color: white;
-    padding-top: 30px;
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 20px solid black; */
+}
+#first-page img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+#first-page img:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+.text-box{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* width: 50vw; */
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: inline-flex;
+    color: var(--color);
+    font-size: 20px;
+}
+.text-box:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-duration: 0.8s;
+    cursor: default;
+}
+.text{
+    width: 0;
+    color: var(--color);
+    font-size: var(--size);
+    line-height: var(--size);
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriting 6s steps(var(--words-num)) infinite;
+}
+.text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: var(--size);
+    background-color: var(--color);
+    animation: cursor 1s ease-in-out infinite;
+}
+
+/* 光标闪烁动画 */
+@keyframes cursor{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+/* 打字框框变长 */
+@keyframes typewriting{
+    0%{
+        width: 2px;
+    }
+    10%{
+        width: 2px;
+    }
+    40%{
+        width: var(--words);
+    }
+    60%{
+        width: var(--words);
+    }
+    90%{
+        width: 2px;
+    }
+    100%{
+        width: 2px;
+    }
+}
+.ico-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.ico-box svg{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.ico-box svg:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition-duration: 0.8s;
 }
 #second-page{
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/movie1.jpg);
+    background: white;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
-#third-page{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/movie2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+
+.footer{
+    margin-top: 0;
+    background-color: white;
+    padding-top: 30px;
 }

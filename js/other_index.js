@@ -16,3 +16,6 @@ function movie() {
 function game() {
     window.location = "https://tlxxsyh.github.io/html/other/game.html";
 }
+function cartoon(){
+    window.location = "https://tlxxsyh.github.io/html/other/cartoon.html";
+}
